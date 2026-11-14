@@ -1,10 +1,13 @@
 // English is the source language. Every other language file must have the same keys.
 // Translators: keep the tone calm and practical. Short sentences. Plain words.
 
-export const APP_NAME = 'Survival Guide'; // placeholder until the name is chosen
+// Name chosen Nov 14, 2026. The name stays "Porchlight" in every language; the tagline is translated.
+export const APP_NAME = 'Porchlight';
+export const APP_TAGLINE = 'A Family Survival Guide';
 
 const en = {
   appName: APP_NAME,
+  appTagline: APP_TAGLINE,
 
   // Disclaimer (shown on every launch)
   disclaimerTitle: 'READ THIS FIRST',

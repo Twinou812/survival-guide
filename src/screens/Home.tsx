@@ -9,6 +9,7 @@ export function Home() {
     <main className="page">
       <header className="home-header">
         <h1>{t.appName}</h1>
+        <p className="home-subtitle">{t.appTagline}</p>
         <p className="home-tagline">{t.homeTagline}</p>
         <p className="home-offline">{t.homeOffline}</p>
       </header>

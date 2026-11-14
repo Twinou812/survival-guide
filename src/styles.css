@@ -152,7 +152,8 @@ h1, h2 { line-height: 1.25; }
 
 /* ---------- Home ---------- */
 .home-header { padding: 12px 4px 8px; }
-.home-header h1 { font-size: 2rem; margin: 0 0 6px; }
+.home-header h1 { font-size: 2rem; margin: 0 0 2px; }
+.home-subtitle { font-size: 1rem; font-weight: 600; color: var(--accent); margin: 0 0 10px; }
 .home-tagline { font-size: 1.1rem; margin: 0 0 6px; }
 .home-offline {
   display: inline-block; margin: 4px 0 0; padding: 4px 10px;

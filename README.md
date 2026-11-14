@@ -1,9 +1,9 @@
-# Survival Guide (working name)
+# Porchlight: A Family Survival Guide
 
 A free, offline survival guide for families. No accounts, no tracking, no data mining.
 On The House Software.
 
-**Phase 2: content, one section at a time.** Written so far: Water. React + Vite + Capacitor. One codebase feeds the Android app and the
+**Phase 2: content, one section at a time.** Written so far: Water, Food Storage. React + Vite + Capacitor. One codebase feeds the Android app and the
 installable offline website (which is how iPhone users get it for now).
 
 ## What's in Phase 1

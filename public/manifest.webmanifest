@@ -1,6 +1,6 @@
 {
-  "name": "Survival Guide",
-  "short_name": "Survival Guide",
+  "name": "Porchlight: A Family Survival Guide",
+  "short_name": "Porchlight",
   "description": "A free, offline survival guide for families. No accounts, no tracking.",
   "start_url": "./",
   "scope": "./",

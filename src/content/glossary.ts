@@ -6,12 +6,27 @@ import type { GlossaryTerm } from './types';
 
 export const GLOSSARY: GlossaryTerm[] = [
   {
+    id: 'appliance-thermometer',
+    name: { en: 'Appliance thermometer' },
+    definition: {
+      en: 'A small thermometer that sits or hangs inside a refrigerator or freezer so you can check that food is still at 40°F (4°C) or colder.',
+    },
+    sketch: 'appliance-thermometer',
+  },
+  {
     id: 'bathtub-bladder',
     name: { en: 'Bathtub water bladder' },
     definition: {
       en: 'A large, clean plastic bag made for drinking water that lies in the bathtub and is filled from the tap, keeping the water away from the tub surface. Comes with a small pump to get the water out.',
     },
     sketch: 'bathtub-bladder',
+  },
+  {
+    id: 'botulism',
+    name: { en: 'Botulism' },
+    definition: {
+      en: 'A rare but deadly poisoning from a germ that grows in sealed, airless, low-acid food, such as badly home-canned vegetables. Its poison causes double vision, drooping eyelids, slurred speech, and weakness. It is an emergency.',
+    },
   },
   {
     id: 'bung-wrench',
@@ -29,11 +44,34 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'canning-salt',
+    name: { en: 'Canning salt (pickling salt)' },
+    definition: {
+      en: 'Pure salt with no iodine or anti-caking additives, used for pickles and sauerkraut. Table salt can make brine cloudy, and flaky salts measure differently, so recipe amounts come out wrong.',
+    },
+  },
+  {
     id: 'chlorine-dioxide',
     name: { en: 'Chlorine dioxide tablets' },
     definition: {
       en: 'Small tablets that kill germs in water, including some that chlorine bleach and iodine miss. Sold for camping and travel. Follow the label for the waiting time.',
     },
+  },
+  {
+    id: 'clay-pot-cooler',
+    name: { en: 'Clay pot cooler (zeer pot)' },
+    definition: {
+      en: 'Two unglazed clay pots, one inside the other, with wet sand between them. Water evaporating from the outer pot cools the inner one. Works in hot, dry weather, not humid weather.',
+    },
+    sketch: 'clay-pot-cooler',
+  },
+  {
+    id: 'cold-room',
+    name: { en: 'Cold room' },
+    definition: {
+      en: 'A small room or closet kept cold by outside walls and cold air, insulated from the warm house, used to store crops and canned food.',
+    },
+    sketch: 'cold-room',
   },
   {
     id: 'curb-key',
@@ -42,6 +80,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A long T-shaped metal rod that reaches down into the small box in the ground near the street to turn a home\'s water on or off.',
     },
     sketch: 'curb-key',
+  },
+  {
+    id: 'curing',
+    name: { en: 'Curing (vegetables)' },
+    definition: {
+      en: 'Letting freshly picked onions, potatoes, squash, or garlic rest for days or weeks so their skins toughen and small cuts heal. Cured vegetables keep much longer.',
+    },
   },
   {
     id: 'distillation',
@@ -66,6 +111,21 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'dry-ice',
+    name: { en: 'Dry ice' },
+    definition: {
+      en: 'Frozen carbon dioxide, far colder than normal ice, sold in blocks to keep freezers and coolers cold. Never touch it with bare hands, and never use it in a closed room or car: the gas it gives off can suffocate.',
+    },
+  },
+  {
+    id: 'fifo',
+    name: { en: 'First in, first out (FIFO)' },
+    definition: {
+      en: 'A way of storing food so the oldest is always eaten first: new items go to the back, and you take from the front.',
+    },
+    sketch: 'fifo-shelf',
+  },
+  {
     id: 'first-flush-diverter',
     name: { en: 'First-flush diverter' },
     definition: {
@@ -74,12 +134,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'rain-barrel',
   },
   {
+    id: 'dehydrator',
+    name: { en: 'Food dehydrator' },
+    definition: {
+      en: 'An electric box with stacked trays and a fan that dries food slowly with gentle heat.',
+    },
+  },
+  {
     id: 'food-grade-container',
     name: { en: 'Food-grade container' },
     definition: {
       en: 'A container made to safely hold food or drinking water. It is labeled for food or water use. Paint buckets and chemical jugs are not food-grade even if they look the same.',
     },
     sketch: 'water-jug',
+  },
+  {
+    id: 'gamma-lid',
+    name: { en: 'Gamma lid' },
+    definition: {
+      en: 'A two-part lid for a plastic bucket. A ring snaps onto the rim, and the center screws in and out, so the bucket is easy to open and reseal.',
+    },
+    sketch: 'gamma-lid',
   },
   {
     id: 'gravity-filter',
@@ -97,10 +172,40 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'grain-mill',
+    name: { en: 'Hand grain mill' },
+    definition: {
+      en: 'A hand-cranked grinder that clamps to a table and turns whole wheat, corn, or other dry grain into flour.',
+    },
+    sketch: 'grain-mill',
+  },
+  {
+    id: 'hardware-cloth',
+    name: { en: 'Hardware cloth' },
+    definition: {
+      en: 'Stiff wire mesh with small square holes (1/4 to 1/2 inch, about 6 to 12 mm), used to keep mice, rats, and other animals out.',
+    },
+  },
+  {
+    id: 'haybox',
+    name: { en: 'Haybox (retained-heat cooker)' },
+    definition: {
+      en: 'An insulated box (a cooler or box packed with blankets or straw) that keeps a pot of boiling food hot for hours, so it finishes cooking without fuel.',
+    },
+    sketch: 'haybox',
+  },
+  {
     id: 'hdpe',
     name: { en: 'HDPE' },
     definition: {
       en: 'A strong plastic used for water jugs and drums. Look for the number 2 inside the recycling triangle on the bottom.',
+    },
+  },
+  {
+    id: 'high-acid-food',
+    name: { en: 'High-acid food' },
+    definition: {
+      en: 'Food sour enough to stop the botulism germ from growing: most fruit, pickles, sauerkraut, and tomatoes with added lemon juice or vinegar. It can be canned in a pot of boiling water.',
     },
   },
   {
@@ -112,12 +217,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'hollow-fiber-filter',
   },
   {
+    id: 'low-acid-food',
+    name: { en: 'Low-acid food' },
+    definition: {
+      en: 'Food that is not sour enough to stop the botulism germ: vegetables, meat, fish, beans, milk, and soups. At home it can only be canned safely in a pressure canner.',
+    },
+  },
+  {
     id: 'main-shutoff-valve',
     name: { en: 'Main water valve' },
     definition: {
       en: 'The valve where water enters your house. Closing it stops all water coming in or going out through your pipes.',
     },
     sketch: 'main-shutoff',
+  },
+  {
+    id: 'manual-can-opener',
+    name: { en: 'Manual can opener' },
+    definition: {
+      en: 'A hand-turned can opener that needs no electricity. A tiny folding one (sometimes called a P-38) fits on a key ring.',
+    },
+    sketch: 'manual-can-opener',
   },
   {
     id: 'medicine-dropper',
@@ -135,12 +255,51 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'mylar-bag',
+    name: { en: 'Mylar bag' },
+    definition: {
+      en: 'A thick, shiny bag made of plastic with a thin layer of metal. Once sealed with heat, it keeps out air, moisture, and light. Used with oxygen absorbers for long-term food storage.',
+    },
+    sketch: 'mylar-bucket',
+  },
+  {
+    id: 'number-10-can',
+    name: { en: 'Number 10 can (#10 can)' },
+    definition: {
+      en: 'A large metal can holding about 3 quarts (3 liters). Dry foods sold for long-term storage often come in these.',
+    },
+    sketch: 'number-10-can',
+  },
+  {
+    id: 'oxygen-absorber',
+    name: { en: 'Oxygen absorber' },
+    definition: {
+      en: 'A small packet of iron powder that soaks up the oxygen in a sealed container, keeping stored dry food fresh for years and killing insects. Works only in an airtight container, and only with dry food.',
+    },
+    sketch: 'oxygen-absorber',
+  },
+  {
+    id: 'pantry-pests',
+    name: { en: 'Pantry pests' },
+    definition: {
+      en: 'Small beetles, weevils, and moths that live in flour, grain, beans, and cereal. Signs are tiny moving bugs, webs, or clumps. Freezing kills them.',
+    },
+  },
+  {
     id: 'pet-bottle',
     name: { en: 'PET bottle' },
     definition: {
       en: 'The common clear plastic bottle used for water and soda. Look for the number 1 (or the letters PET or PETE) inside the recycling triangle on the bottom.',
     },
     sketch: 'pet-bottle',
+  },
+  {
+    id: 'pressure-canner',
+    name: { en: 'Pressure canner' },
+    definition: {
+      en: 'A heavy pot with a locking lid and a gauge or weight that builds steam pressure, heating jars hotter than boiling water. The only safe way to can low-acid food at home. Not the same as a pressure cooker.',
+    },
+    sketch: 'pressure-canner',
   },
   {
     id: 'rain-barrel',
@@ -151,12 +310,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'rain-barrel',
   },
   {
+    id: 'ready-to-feed-formula',
+    name: { en: 'Ready-to-feed formula' },
+    definition: {
+      en: 'Liquid baby formula sold sealed and sterile, ready to pour into a clean bottle with no water added. The safest choice for formula-fed babies in an emergency.',
+    },
+  },
+  {
     id: 'rolling-boil',
     name: { en: 'Rolling boil' },
     definition: {
       en: 'Water boiling hard, with big bubbles that keep rising even when you stir it.',
     },
     sketch: 'rolling-boil',
+  },
+  {
+    id: 'root-cellar',
+    name: { en: 'Root cellar' },
+    definition: {
+      en: 'A cold, dark, damp storage place, usually covered with earth, that keeps root vegetables, cabbage, and apples fresh for months without power.',
+    },
+    sketch: 'barrel-mound',
   },
   {
     id: 'siphon-pump',
@@ -183,11 +357,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'solar-still',
   },
   {
+    id: 'storage-mound',
+    name: { en: 'Storage mound (clamp)' },
+    definition: {
+      en: 'A pile of vegetables on a bed of straw, covered with more straw and packed soil, built on top of the ground to keep crops cold and dark through winter.',
+    },
+    sketch: 'storage-mound',
+  },
+  {
     id: 'unscented-bleach',
     name: { en: 'Unscented liquid bleach' },
     definition: {
       en: 'Plain household chlorine bleach with no perfume or added cleaners. The label should say 6% or 8.25% sodium hypochlorite.',
     },
+  },
+  {
+    id: 'water-bath-canner',
+    name: { en: 'Water-bath canner' },
+    definition: {
+      en: 'A tall pot with a rack that holds jars under boiling water. Safe only for high-acid food like fruit, jams, and pickles.',
+    },
+    sketch: 'water-bath-canner',
   },
 ];
 
