@@ -45,6 +45,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'bung-wrench',
   },
   {
+    id: 'cage-trap',
+    name: { en: 'Cage trap (live trap)' },
+    definition: {
+      en: 'A wire box with a door that drops shut when an animal steps on a plate inside, catching it alive and unhurt. Sold in sizes for squirrels, rabbits, and raccoons.',
+    },
+    sketch: 'cage-trap',
+  },
+  {
     id: 'calcium-hypochlorite',
     name: { en: 'Calcium hypochlorite (pool shock)' },
     definition: {
@@ -127,6 +135,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'disposable-gloves',
+    name: { en: 'Disposable gloves' },
+    definition: {
+      en: 'Thin nitrile or latex gloves worn once and thrown away. They keep germs in an animal\'s blood and organs off your skin while you clean game.',
+    },
+  },
+  {
     id: 'distillation',
     name: { en: 'Distillation' },
     definition: {
@@ -156,6 +171,22 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'field-dressing',
+    name: { en: 'Field dressing (gutting)' },
+    definition: {
+      en: 'Removing the stomach, intestines, and other organs from an animal soon after it dies, so the meat cools quickly and stays clean.',
+    },
+    sketch: 'gutting-small-game',
+  },
+  {
+    id: 'figure-four-trigger',
+    name: { en: 'Figure-four trigger' },
+    definition: {
+      en: 'Three notched sticks that fit together in the shape of the number 4 and hold up a box or weight. When an animal pulls the bait stick, the sticks fall apart and the box drops.',
+    },
+    sketch: 'figure-four-trigger',
+  },
+  {
     id: 'fifo',
     name: { en: 'First in, first out (FIFO)' },
     definition: {
@@ -179,6 +210,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'food-thermometer',
+    name: { en: 'Food thermometer (meat thermometer)' },
+    definition: {
+      en: 'A thermometer with a metal probe pushed into the thickest part of cooked food to show its inside temperature. The only reliable way to know wild meat is safe.',
+    },
+    sketch: 'food-thermometer',
+  },
+  {
     id: 'food-grade-container',
     name: { en: 'Food-grade container' },
     definition: {
@@ -191,6 +230,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Frost date' },
     definition: {
       en: 'The average date of the last frost in spring or the first frost in autumn where you live. Frost can still come after the spring date, so it is a guide, not a promise.',
+    },
+  },
+  {
+    id: 'game-trail',
+    name: { en: 'Game trail' },
+    definition: {
+      en: 'A narrow path worn into grass or brush by animals using the same route again and again. The best place to set a trap or snare.',
     },
   },
   {
@@ -322,6 +368,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'minnow-trap',
+    name: { en: 'Minnow trap' },
+    definition: {
+      en: 'A container with a funnel-shaped entrance that small fish swim into but cannot find their way out of. Can be made from a plastic bottle.',
+    },
+    sketch: 'bottle-minnow-trap',
+  },
+  {
     id: 'mulch',
     name: { en: 'Mulch' },
     definition: {
@@ -383,6 +437,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'pressure-canner',
   },
   {
+    id: 'protein-poisoning',
+    name: { en: 'Protein poisoning (rabbit starvation)' },
+    definition: {
+      en: 'Sickness reported in people who eat only very lean meat with almost no fat or starch: diarrhea, weakness, and constant hunger. Prevented by eating fat and starch along with the meat.',
+    },
+  },
+  {
+    id: 'rabies',
+    name: { en: 'Rabies' },
+    definition: {
+      en: 'A virus spread by the bite or scratch of an infected mammal, most often raccoons, skunks, foxes, and bats in the U.S. Shots after a bite prevent it; once signs of illness appear it is almost always fatal.',
+    },
+  },
+  {
+    id: 'raccoon-latrine',
+    name: { en: 'Raccoon latrine' },
+    definition: {
+      en: 'A spot raccoons use again and again as a toilet, often at the base of a tree, on a log, stump, woodpile, deck, or roof. The droppings can hold roundworm eggs that are dangerous to people, especially children.',
+    },
+  },
+  {
     id: 'rain-barrel',
     name: { en: 'Rain barrel' },
     definition: {
@@ -430,6 +505,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'row-cover',
   },
   {
+    id: 'scalding',
+    name: { en: 'Scalding (birds)' },
+    definition: {
+      en: 'Dipping a bird in hot water, about 140°F (60°C), for under a minute or so to loosen the feathers so they pull out easily without tearing the skin.',
+    },
+  },
+  {
     id: 'seed-potato',
     name: { en: 'Seed potato' },
     definition: {
@@ -459,6 +541,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A tube with a squeeze bulb or small hand pump in it. A few squeezes start the water flowing out of a drum into a lower container. Keep one just for water.',
     },
     sketch: 'siphon-pump',
+  },
+  {
+    id: 'snare',
+    name: { en: 'Snare' },
+    definition: {
+      en: 'A loop of thin wire or cord set over an animal trail that tightens around an animal that walks into it. Illegal for most uses in many places, and dangerous to pets.',
+    },
+    sketch: 'simple-snare',
   },
   {
     id: 'sodis',
@@ -514,6 +604,21 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A leafy shoot that grows from a sweet potato. Snapped off and planted, it grows into a new plant. Sweet potatoes are grown from slips, not seeds.',
     },
     sketch: 'sweet-potato-slips',
+  },
+  {
+    id: 'trichinellosis',
+    name: { en: 'Trichinellosis (trichinosis)' },
+    definition: {
+      en: 'Illness from a tiny worm that lives in the meat of some animals, especially bears, wild pigs, raccoons, and other meat-eaters. Killed by cooking to 160°F (71°C); freezing, smoking, or drying does not reliably kill it in wild meat.',
+    },
+  },
+  {
+    id: 'tularemia',
+    name: { en: 'Tularemia (rabbit fever)' },
+    definition: {
+      en: 'A germ carried by rabbits, squirrels, and other rodents, caught through the skin, eyes, or mouth while skinning them or from undercooked meat. Prevented by gloves and thorough cooking. Infected animals may have pale spots on the liver.',
+    },
+    sketch: 'liver-check',
   },
   {
     id: 'unscented-bleach',
