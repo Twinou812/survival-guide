@@ -29,6 +29,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'box-fan-filter',
+    name: { en: 'Box fan air cleaner' },
+    definition: {
+      en: 'A homemade air cleaner: a furnace filter rated MERV 13 strapped to the back of a box fan. It pulls smoke particles out of the air in one room.',
+    },
+    sketch: 'box-fan-filter',
+  },
+  {
     id: 'bucket-planter',
     name: { en: 'Bucket planter' },
     definition: {
@@ -65,6 +73,21 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Pure salt with no iodine or anti-caking additives, used for pickles and sauerkraut. Table salt can make brine cloudy, and flaky salts measure differently, so recipe amounts come out wrong.',
     },
+  },
+  {
+    id: 'carbon-monoxide',
+    name: { en: 'Carbon monoxide (CO)' },
+    definition: {
+      en: 'A poison gas with no color or smell, made by anything that burns fuel: engines, generators, grills, stoves, and heaters. It kills people in their sleep.',
+    },
+  },
+  {
+    id: 'co-alarm',
+    name: { en: 'Carbon monoxide alarm' },
+    definition: {
+      en: 'A small device that beeps loudly when carbon monoxide builds up. Choose one with a battery or battery backup so it works when the power is out.',
+    },
+    sketch: 'co-alarm',
   },
   {
     id: 'chlorine-dioxide',
@@ -187,6 +210,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'figure-four-trigger',
   },
   {
+    id: 'fine-tipped-tweezers',
+    name: { en: 'Fine-tipped tweezers' },
+    definition: {
+      en: 'Tweezers with narrow, pointed tips that can grab a tick right at the skin without squeezing its body.',
+    },
+    sketch: 'tick-removal',
+  },
+  {
     id: 'fifo',
     name: { en: 'First in, first out (FIFO)' },
     definition: {
@@ -230,6 +261,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Frost date' },
     definition: {
       en: 'The average date of the last frost in spring or the first frost in autumn where you live. Frost can still come after the spring date, so it is a guide, not a promise.',
+    },
+  },
+  {
+    id: 'frostbite',
+    name: { en: 'Frostbite' },
+    definition: {
+      en: 'Skin and the tissue under it freezing in the cold. The skin turns white or grayish-yellow, feels hard or waxy, and goes numb.',
     },
   },
   {
@@ -308,6 +346,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'heat-exhaustion',
+    name: { en: 'Heat exhaustion' },
+    definition: {
+      en: 'The body struggling to cool itself in heat: heavy sweating, cool clammy skin, weakness, dizziness, and nausea. It can turn into heat stroke.',
+    },
+  },
+  {
+    id: 'heat-index',
+    name: { en: 'Heat index' },
+    definition: {
+      en: 'How hot it feels when humidity is added to the air temperature. Damp air stops sweat from drying, so the body cools less.',
+    },
+  },
+  {
+    id: 'heat-stroke',
+    name: { en: 'Heat stroke' },
+    definition: {
+      en: 'A deadly emergency in which the body overheats past 103°F (39.4°C) and the brain starts to fail: confusion, slurred speech, fainting, or seizures.',
+    },
+  },
+  {
     id: 'high-acid-food',
     name: { en: 'High-acid food' },
     definition: {
@@ -328,6 +387,28 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Seed made by crossing two different parent varieties. The plants grow well, but seed saved from them does not grow true, so new seed must be bought each year.',
     },
+  },
+  {
+    id: 'hypothermia',
+    name: { en: 'Hypothermia' },
+    definition: {
+      en: 'A body temperature below 95°F (35°C). Shivering, confusion, fumbling hands, slurred speech, and sleepiness are warning signs.',
+    },
+  },
+  {
+    id: 'insect-repellent',
+    name: { en: 'Insect repellent' },
+    definition: {
+      en: 'A spray or lotion put on skin to keep mosquitoes and ticks from biting. Choose one registered with the EPA (it has an EPA registration number on the label).',
+    },
+  },
+  {
+    id: 'kerosene-heater',
+    name: { en: 'Kerosene heater' },
+    definition: {
+      en: 'A portable heater that burns liquid kerosene with a wick. It has no chimney, so the room needs fresh air and a CO alarm.',
+    },
+    sketch: 'kerosene-heater',
   },
   {
     id: 'low-acid-food',
@@ -391,6 +472,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'mylar-bucket',
   },
   {
+    id: 'n95-respirator',
+    name: { en: 'N95 respirator' },
+    definition: {
+      en: 'A close-fitting face mask, approved by NIOSH, that filters out at least 95 percent of fine particles such as smoke when it seals to the face. Two straps go behind the head.',
+    },
+    sketch: 'n95-respirator',
+  },
+  {
     id: 'number-10-can',
     name: { en: 'Number 10 can (#10 can)' },
     definition: {
@@ -421,12 +510,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'permethrin',
+    name: { en: 'Permethrin' },
+    definition: {
+      en: 'An insecticide sprayed on clothing, shoes, and gear (never on skin) that kills ticks and mosquitoes that touch it. It lasts through several washings.',
+    },
+  },
+  {
     id: 'pet-bottle',
     name: { en: 'PET bottle' },
     definition: {
       en: 'The common clear plastic bottle used for water and soda. Look for the number 1 (or the letters PET or PETE) inside the recycling triangle on the bottom.',
     },
     sketch: 'pet-bottle',
+  },
+  {
+    id: 'pipe-insulation',
+    name: { en: 'Pipe insulation' },
+    definition: {
+      en: 'Foam tubes split along one side that slip over water pipes to slow heat loss and help keep them from freezing.',
+    },
+    sketch: 'drip-faucet',
   },
   {
     id: 'pressure-canner',
@@ -510,6 +614,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Dipping a bird in hot water, about 140°F (60°C), for under a minute or so to loosen the feathers so they pull out easily without tearing the skin.',
     },
+  },
+  {
+    id: 'seasoned-firewood',
+    name: { en: 'Seasoned firewood' },
+    definition: {
+      en: 'Firewood that has been split and dried for 6 to 12 months or more, until it is below 20 percent moisture, so it burns hot with little smoke.',
+    },
+    sketch: 'firewood-stack',
   },
   {
     id: 'seed-potato',
@@ -641,6 +753,21 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A tall pot with a rack that holds jars under boiling water. Safe only for high-acid food like fruit, jams, and pickles.',
     },
     sketch: 'water-bath-canner',
+  },
+  {
+    id: 'wearable-blanket',
+    name: { en: 'Wearable blanket' },
+    definition: {
+      en: 'A sleeveless sleeping bag that a baby wears over pajamas, keeping them warm without any loose blanket in the crib. Also called a sleep sack.',
+    },
+    sketch: 'wearable-blanket',
+  },
+  {
+    id: 'wind-chill',
+    name: { en: 'Wind chill' },
+    definition: {
+      en: 'How cold it feels on bare skin when wind carries body heat away. A 0°F (-18°C) day with a 15 mph wind feels like -19°F (-28°C).',
+    },
   },
 ];
 
