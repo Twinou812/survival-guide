@@ -143,6 +143,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'cathole',
   },
   {
+    id: 'cb-radio',
+    name: { en: "CB radio" },
+    definition: {
+      en: "Citizens Band radio, common in trucks and cars. No license needed. Channel 9 is for emergencies and traveler help only; truckers often talk on channel 19.",
+    },
+  },
+  {
     id: 'chlorine-dioxide',
     name: { en: 'Chlorine dioxide tablets' },
     definition: {
@@ -392,6 +399,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'frs-radio',
+    name: { en: "FRS radio (Family Radio Service)" },
+    definition: {
+      en: "The common store-bought walkie-talkie. No license needed, fixed antenna, low power. Real range among houses and trees is often half a mile to 2 miles. Privacy codes do not make talk private.",
+    },
+  },
+  {
     id: 'fuel-stabilizer',
     name: { en: 'Fuel stabilizer' },
     definition: {
@@ -437,6 +451,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'germination-test',
   },
   {
+    id: 'gmrs-radio',
+    name: { en: "GMRS radio" },
+    definition: {
+      en: "A stronger walkie-talkie or car radio service that can use repeaters. Needs one FCC license (no exam) that covers the license holder's whole family for 10 years.",
+    },
+  },
+  {
     id: 'go-bag',
     name: { en: 'Go-bag' },
     definition: {
@@ -466,6 +487,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'ham-radio',
+    name: { en: "Ham radio (amateur radio)" },
+    definition: {
+      en: "Radio for people who pass a short FCC exam. Handhelds can reach local repeaters and emergency nets; bigger stations can reach other states and countries. Each person who talks needs their own license.",
+    },
+  },
+  {
     id: 'grain-mill',
     name: { en: 'Hand grain mill' },
     definition: {
@@ -478,6 +506,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Hand sanitizer' },
     definition: {
       en: 'A gel or liquid rubbed on the hands to kill germs without water. Use one with at least 60% alcohol. It does not work well on hands that look dirty or greasy.',
+    },
+  },
+  {
+    id: 'hand-crank-radio',
+    name: { en: "Hand-crank radio" },
+    definition: {
+      en: "A small radio you can power by turning a handle, and often by a small solar panel too. Many also get NOAA weather broadcasts and can charge a phone a little.",
     },
   },
   {
@@ -670,6 +705,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Mulch' },
     definition: {
       en: 'A layer of straw, leaves, grass clippings, or wood chips spread over the soil to keep it damp and cool and to smother weeds.',
+    },
+  },
+  {
+    id: 'murs-radio',
+    name: { en: "MURS radio" },
+    definition: {
+      en: "A small U.S. radio service with 5 channels, up to 2 watts, and no license needed. It does not allow repeaters.",
     },
   },
   {
@@ -885,6 +927,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'recovery-position',
   },
   {
+    id: 'repeater',
+    name: { en: "Repeater" },
+    definition: {
+      en: "A radio station on a tall tower or hill that receives a weak signal and sends it out again stronger, so handhelds can reach much farther. Used by GMRS and ham radio. Ask the owner before using one.",
+    },
+  },
+  {
     id: 'rocket-stove',
     name: { en: 'Rocket stove' },
     definition: {
@@ -915,6 +964,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'Thin, white garden fabric laid over plants or over wire hoops. It lets in light and water, keeps out many insects, and gives a few degrees of frost protection.',
     },
     sketch: 'row-cover',
+  },
+  {
+    id: 'same-code',
+    name: { en: "SAME code" },
+    definition: {
+      en: "A 6-digit county code you enter into a weather radio so it only sounds an alarm for warnings in your area. Find yours on the National Weather Service website or by calling 1-888-697-7263.",
+    },
   },
   {
     id: 'scalding',
@@ -1187,6 +1243,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A sleeveless sleeping bag that a baby wears over pajamas, keeping them warm without any loose blanket in the crib. Also called a sleep sack.',
     },
     sketch: 'wearable-blanket',
+  },
+  {
+    id: 'weather-radio',
+    name: { en: "Weather radio (NOAA)" },
+    definition: {
+      en: "A radio that receives the National Weather Service's 24-hour broadcasts on 7 special frequencies and can sound an alarm for warnings, even at night.",
+    },
   },
   {
     id: 'wind-chill',

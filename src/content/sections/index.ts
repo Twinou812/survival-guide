@@ -13,6 +13,7 @@ import { toolsKits } from './tools-kits';
 import { calculators } from './calculators';
 import { menstrualCare } from './menstrual-care';
 import { buggingOut } from './bugging-out';
+import { communications } from './communications';
 
 // One file per section. Phase 2 fills them in one at a time.
 // Order here is the order on the home screen.
@@ -24,6 +25,7 @@ export const SECTIONS: Section[] = [
   trapping,
   seasons,
   powerLightSanitation,
+  communications,
   medical,
   mind,
   homeDefense,
