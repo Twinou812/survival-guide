@@ -14,6 +14,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'appliance-thermometer',
   },
   {
+    id: 'backfeeding',
+    name: { en: 'Backfeeding' },
+    definition: {
+      en: 'Sending generator power into a house by plugging it into a wall outlet or dryer outlet. It can push deadly electricity back out onto the power lines and kill utility workers or neighbors. Never do it.',
+    },
+    sketch: 'backfeed-cord',
+  },
+  {
     id: 'bathtub-bladder',
     name: { en: 'Bathtub water bladder' },
     definition: {
@@ -53,6 +61,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'bung-wrench',
   },
   {
+    id: 'button-battery',
+    name: { en: 'Button battery (coin battery)' },
+    definition: {
+      en: 'A small, flat, round battery used in remotes, scales, key fobs, and toys. If a child swallows one, it can burn through the throat or stomach within hours. It is an emergency.',
+    },
+  },
+  {
     id: 'cage-trap',
     name: { en: 'Cage trap (live trap)' },
     definition: {
@@ -88,6 +103,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A small device that beeps loudly when carbon monoxide builds up. Choose one with a battery or battery backup so it works when the power is out.',
     },
     sketch: 'co-alarm',
+  },
+  {
+    id: 'cathole',
+    name: { en: 'Cathole' },
+    definition: {
+      en: 'A small hole, 6 to 8 inches (15 to 20 cm) deep, dug to bury one bowel movement and filled back in right after.',
+    },
+    sketch: 'cathole',
   },
   {
     id: 'chlorine-dioxide',
@@ -129,10 +152,24 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'compost-bin',
   },
   {
+    id: 'contractor-bag',
+    name: { en: 'Contractor bag' },
+    definition: {
+      en: 'An extra-thick plastic trash bag, 3 to 5 mil thick, sold for construction cleanup. Strong enough to line a toilet bucket without tearing.',
+    },
+  },
+  {
     id: 'cool-season-crop',
     name: { en: 'Cool-season crop' },
     definition: {
       en: 'A vegetable that grows best in cool weather and can take a light frost, such as peas, lettuce, spinach, cabbage, kale, carrots, and potatoes.',
+    },
+  },
+  {
+    id: 'cover-material',
+    name: { en: 'Cover material (for a bucket toilet)' },
+    definition: {
+      en: 'Dry, carbon-rich material sprinkled over feces in a bucket toilet to cover them: sawdust, wood shavings, shredded paper, peat moss, coir, or dry leaves. It cuts smell and keeps flies off.',
     },
   },
   {
@@ -271,6 +308,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'fuel-stabilizer',
+    name: { en: 'Fuel stabilizer' },
+    definition: {
+      en: 'A liquid added to fresh gasoline before storing it, to slow the changes that make old gas gum up engines.',
+    },
+  },
+  {
     id: 'game-trail',
     name: { en: 'Game trail' },
     definition: {
@@ -284,6 +328,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A two-part lid for a plastic bucket. A ring snaps onto the rim, and the center screws in and out, so the bucket is easy to open and reseal.',
     },
     sketch: 'gamma-lid',
+  },
+  {
+    id: 'gas-can',
+    name: { en: 'Gas can (approved fuel container)' },
+    definition: {
+      en: 'A red container made and labeled for gasoline, usually 5 gallons (19 liters) or less, with a tight cap. Never store fuel in glass, milk jugs, or drink bottles.',
+    },
+    sketch: 'gas-can-ground',
   },
   {
     id: 'germination-test',
@@ -317,6 +369,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'grain-mill',
   },
   {
+    id: 'hand-sanitizer',
+    name: { en: 'Hand sanitizer' },
+    definition: {
+      en: 'A gel or liquid rubbed on the hands to kill germs without water. Use one with at least 60% alcohol. It does not work well on hands that look dirty or greasy.',
+    },
+  },
+  {
     id: 'hardening-off',
     name: { en: 'Hardening off' },
     definition: {
@@ -344,6 +403,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'A strong plastic used for water jugs and drums. Look for the number 2 inside the recycling triangle on the bottom.',
     },
+  },
+  {
+    id: 'headlamp',
+    name: { en: 'Headlamp' },
+    definition: {
+      en: 'A small battery light worn on a strap around the head, so both hands stay free and the light points wherever you look.',
+    },
+    sketch: 'headlamp',
   },
   {
     id: 'heat-exhaustion',
@@ -409,6 +476,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A portable heater that burns liquid kerosene with a wick. It has no chimney, so the room needs fresh air and a CO alarm.',
     },
     sketch: 'kerosene-heater',
+  },
+  {
+    id: 'lamp-oil',
+    name: { en: 'Lamp oil' },
+    definition: {
+      en: 'Liquid fuel for oil lamps and some lanterns. A child who swallows even a little can choke it into the lungs and get a deadly pneumonia. Keep it in its original child-resistant bottle, out of reach.',
+    },
   },
   {
     id: 'low-acid-food',
@@ -510,6 +584,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'pathogen',
+    name: { en: 'Pathogen' },
+    definition: {
+      en: 'A germ that causes disease: a bacterium, virus, parasite, or worm egg.',
+    },
+  },
+  {
     id: 'permethrin',
     name: { en: 'Permethrin' },
     definition: {
@@ -533,12 +614,44 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'drip-faucet',
   },
   {
+    id: 'pit-latrine',
+    name: { en: 'Pit latrine' },
+    definition: {
+      en: 'A deep hole in the ground, covered by a seat or slab with a lid, used as a toilet for weeks or months when there is no plumbing.',
+    },
+    sketch: 'pit-latrine',
+  },
+  {
+    id: 'portable-power-station',
+    name: { en: 'Portable power station' },
+    definition: {
+      en: 'A large rechargeable battery box with wall-style outlets and USB ports. It can be charged from solar panels, a car, or the wall, and runs quietly indoors because it burns no fuel.',
+    },
+    sketch: 'power-station',
+  },
+  {
+    id: 'power-bank',
+    name: { en: 'Power bank' },
+    definition: {
+      en: 'A pocket-size rechargeable battery for charging phones and small devices. Most use lithium-ion cells, which can catch fire if damaged or overheated.',
+    },
+    sketch: 'power-bank',
+  },
+  {
     id: 'pressure-canner',
     name: { en: 'Pressure canner' },
     definition: {
       en: 'A heavy pot with a locking lid and a gauge or weight that builds steam pressure, heating jars hotter than boiling water. The only safe way to can low-acid food at home. Not the same as a pressure cooker.',
     },
     sketch: 'pressure-canner',
+  },
+  {
+    id: 'propane-cylinder',
+    name: { en: 'Propane cylinder' },
+    definition: {
+      en: 'A metal tank of propane for grills, camp stoves, and some heaters, from the small 1-pound (0.45 kg) bottles to the 20-pound (9 kg) grill tank. Always stored outdoors, standing upright.',
+    },
+    sketch: 'propane-cylinder',
   },
   {
     id: 'protein-poisoning',
@@ -583,6 +696,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Liquid baby formula sold sealed and sterile, ready to pour into a clean bottle with no water added. The safest choice for formula-fed babies in an emergency.',
     },
+  },
+  {
+    id: 'rocket-stove',
+    name: { en: 'Rocket stove' },
+    definition: {
+      en: 'A small outdoor stove shaped like an L, made of bricks, blocks, or cans. Sticks burn in the side opening and the heat rises straight up the chimney to the pot, so it cooks with very little wood.',
+    },
+    sketch: 'rocket-stove',
   },
   {
     id: 'rolling-boil',
@@ -630,6 +751,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A potato grown and checked to be free of disease, sold for planting. Small ones are planted whole; big ones are cut into pieces, each with an eye (bud).',
     },
     sketch: 'seed-potato',
+  },
+  {
+    id: 'septic-system',
+    name: { en: 'Septic system' },
+    definition: {
+      en: 'A buried tank and drain field in the yard that treats a house’s wastewater when the house is not on a city sewer. Some need electricity for a pump.',
+    },
   },
   {
     id: 'shade-cloth',
@@ -694,6 +822,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'sprouting-jar',
   },
   {
+    id: 'starting-watts',
+    name: { en: 'Starting watts and running watts' },
+    definition: {
+      en: 'Running watts are the power a machine needs to keep going. Starting watts are the short burst extra that motors, like a refrigerator or pump, need for a few seconds to start.',
+    },
+  },
+  {
     id: 'storage-mound',
     name: { en: 'Storage mound (clamp)' },
     definition: {
@@ -718,6 +853,22 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'sweet-potato-slips',
   },
   {
+    id: 'tippy-tap',
+    name: { en: 'Tippy tap' },
+    definition: {
+      en: 'A hands-free handwashing station: a jug of water hung from a stick and tipped by a foot pedal on a string, so a small stream pours over your hands.',
+    },
+    sketch: 'tippy-tap',
+  },
+  {
+    id: 'transfer-switch',
+    name: { en: 'Transfer switch' },
+    definition: {
+      en: 'A switch an electrician installs next to the breaker panel so a generator can power house circuits safely. It disconnects the house from the power lines first. An interlock kit on the panel does the same job.',
+    },
+    sketch: 'transfer-switch',
+  },
+  {
     id: 'trichinellosis',
     name: { en: 'Trichinellosis (trichinosis)' },
     definition: {
@@ -731,6 +882,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A germ carried by rabbits, squirrels, and other rodents, caught through the skin, eyes, or mouth while skinning them or from undercooked meat. Prevented by gloves and thorough cooking. Infected animals may have pale spots on the liver.',
     },
     sketch: 'liver-check',
+  },
+  {
+    id: 'twin-bucket-toilet',
+    name: { en: 'Twin-bucket toilet' },
+    definition: {
+      en: 'An emergency toilet made from two lidded 5-gallon buckets: one for urine and one, lined with a heavy bag, for feces. Keeping the two apart cuts smell and makes the waste safer to handle.',
+    },
+    sketch: 'twin-bucket-toilet',
   },
   {
     id: 'unscented-bleach',
