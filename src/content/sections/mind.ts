@@ -120,6 +120,7 @@ export const mind: Section = {
         { en: "Repeat for 1 to 5 minutes. If you feel dizzy or tingly, slow down and breathe more gently." },
       ],
     },
+    { type: "sketch", sketch: "cyclic-sighing", caption: { en: "Slow breathing: sit upright, one hand on the belly, and let the breath out slowly through pursed lips, longer than the breath in." } },
     {
       type: "p",
       text: {
@@ -136,6 +137,7 @@ export const mind: Section = {
         { en: "Finish with a few slow breaths. The whole thing takes about 10 minutes, and it is a good way to fall asleep." },
       ],
     },
+    { type: "sketch", sketch: "progressive-muscle-relaxation", caption: { en: "Tense and let go: squeeze one hand into a tight fist for about 5 seconds, then let it fall open and soft, like the other hand." } },
     {
       type: "p",
       text: {
@@ -281,6 +283,59 @@ export const mind: Section = {
       },
     },
 
+    { type: "h", id: "reading", text: { en: "Read every day" } },
+    {
+      type: "p",
+      text: {
+        en: "A book needs no power, no signal, and no charger, and it can take a worried mind somewhere else for a while. Reading is rest, escape, and learning all at once, and reading aloud turns it into time together. With no internet, the paper books in your home are also your only library: the place to look up how to fix the pump, name the plant, or treat the rash.",
+      },
+    },
+    { type: "h", id: "why-read", text: { en: "Why it helps, labeled by evidence" } },
+    {
+      type: "list",
+      items: [
+        { en: "Reading aloud to young children. Pediatricians advise reading aloud with children every day from birth through at least kindergarten. It builds vocabulary, language, and early literacy, and it strengthens the bond between parent and child during the years the brain grows fastest. Evidence label: Well-supported." },
+        { en: "Keeping school going. When schools close, an hour of reading a day keeps children's skills from slipping. Let older children read to younger ones; both learn, and it is a real job (see the daily jobs above)." },
+        { en: "Calming stress. In a small study of health science students, 30 minutes of reading lowered stress about as much as 30 minutes of yoga or of humor. Evidence label: Traditional, limited evidence. You may hear that \"6 minutes of reading cuts stress by 68%\": that figure comes from a 2009 study by a private consulting company that was never published in a scientific journal. Evidence label: Unproven." },
+        { en: "Better sleep than screens. In a careful sleep-lab study (12 adults), people who read on a bright tablet for the hours before bed took about 10 minutes longer to fall asleep, had less dream (REM) sleep, and felt more tired the next morning than when they read a printed book in dim light. The paper book did not hold back the body's sleep hormone; the tablet did. Evidence label: one small but careful study; it agrees with CDC's advice to keep screens out of bed." },
+        { en: "Self-help books for low mood. Self-help books based on cognitive behavioral therapy (CBT) have helped people with mild to moderate depression in many trials, often working better than no help at all. Keep one such book on the shelf. Evidence label: Well-supported for mild to moderate low mood. They do not replace care for severe depression or thoughts of suicide (see the warning signs below)." },
+      ],
+    },
+    { type: "h", id: "when-read", text: { en: "When to read" } },
+    {
+      type: "list",
+      items: [
+        { en: "The hottest hours of a summer afternoon. Heat advice is to do hard work early and late and rest in the heat of the day (see {{seasons|keeping cool in summer}}). Gather the family in the coolest room or deep shade, with water nearby, and read aloud. It keeps everyone still, cool, and together when work should stop." },
+        { en: "Long, dark winter evenings in the one warm room. One good light, everyone under blankets, one person reading aloud. It saves fuel and batteries because only one light is on." },
+        { en: "Bedtime, instead of screens. A short story at the same time every night is part of a calm routine for children, and a paper book helps adults fall asleep better than a phone." },
+        { en: "During night watch shifts, a few pages at a time between checks. Keep the light low and pointed at the page, and look up often (see situational awareness below)." },
+        { en: "After a hard day or bad news, as a break from worry. Choose something easy and familiar; this is not the time for heavy reading." },
+      ],
+    },
+    { type: "sketch", sketch: "family-reading", caption: { en: "On a hot afternoon, rest in deep shade with water nearby while one person reads aloud." } },
+    { type: "h", id: "light-for-reading", text: { en: "Light for reading" } },
+    {
+      type: "list",
+      items: [
+        { en: "Reading in dim light does not harm the eyes. It only tires them sooner. Eye doctors say good light makes reading easier, and looking up into the distance now and then rests the eyes." },
+        { en: "Use a headlamp or a small battery lantern aimed at the page, not a candle. Candles are the last choice: they start house fires (see {{power-light-sanitation|light without power}})." },
+        { en: "Read by daylight when you can, near a window or outside in shade, and save batteries for the evening." },
+        { en: "Anyone who needs reading glasses should keep a spare pair or two in the kit. They are cheap now and hard to replace later." },
+      ],
+    },
+    { type: "h", id: "family-library", text: { en: "Build a family library on paper" } },
+    {
+      type: "list",
+      items: [
+        { en: "Practical books: a printed copy of this guide (from the website), a first aid manual, a garden and food-preserving book for your region, a plant and wildlife field guide, a basic home repair book, a road atlas or paper maps." },
+        { en: "Books for children at every reading level, including picture books for the youngest and chapter books for later. Children like to hear favorites again and again; that is fine." },
+        { en: "Stories everyone enjoys, books of poems, jokes and riddles, and a book of card and paper games." },
+        { en: "School basics: a dictionary, a math workbook for each child's level, paper, and pencils." },
+        { en: "One self-help book based on CBT for low mood and anxiety, and any religious or reflective books that comfort your family." },
+        { en: "Store books dry and off the floor, in sealed plastic tubs if your home floods or is damp. Swap books with neighbors to keep reading fresh." },
+      ],
+    },
+
     // ==================================================================
     { type: "h", id: "substances", text: { en: "Alcohol, caffeine, and nicotine" } },
     {
@@ -358,6 +413,7 @@ export const mind: Section = {
         { en: "End with the plan for tomorrow, so everyone knows what is coming." },
       ],
     },
+    { type: "sketch", sketch: "family-meeting", caption: { en: "A short family meeting around the table: everyone gets a turn, and the job chart on the wall shows who does what." } },
     { type: "h", id: "fair-fights", text: { en: "Rules for disagreeing" } },
     {
       type: "list",
@@ -443,6 +499,7 @@ export const mind: Section = {
         { en: "Faces and details: after a stranger leaves (a delivery driver, a clerk), each person describes them: height, hair, clothes, anything carried. Check how close you all got." },
       ],
     },
+    { type: "sketch", sketch: "kims-game", caption: { en: "Kim's Game: study a tray of small things for a minute, cover it with a towel, then list everything you remember." } },
     {
       type: "p",
       text: {
@@ -481,6 +538,7 @@ export const mind: Section = {
 
     // ==================================================================
     { type: "h", id: "children", text: { en: "Children" } },
+    { type: "sketch", sketch: "comforting-child", caption: { en: "Get down to a child's eye level, hold their hands, and speak calmly and simply." } },
     {
       type: "p",
       text: {
@@ -620,6 +678,7 @@ export const mind: Section = {
         [{ en: "Physical activity (walking, strength work, yoga)" }, { en: "Anxiety, low mood, stress" }, { en: "Well-supported" }, { en: "Match effort to food supply and health. Stop for chest pain." }],
         [{ en: "Slow breathing with a long breath out" }, { en: "Fast calm, mood" }, { en: "Well-supported for short-term calm" }, { en: "Slow down if dizzy or tingly." }],
         [{ en: "Progressive muscle relaxation" }, { en: "Stress, anxiety, falling asleep" }, { en: "Well-supported" }, { en: "Generally safe. Do not squeeze injured muscles." }],
+        [{ en: "Reading for pleasure" }, { en: "Stress, falling asleep" }, { en: "Traditional, limited evidence (small studies)" }, { en: "None. Use a paper book or a dim light, not a bright screen, at night." }],
         [{ en: "Mindfulness meditation" }, { en: "Anxiety, low mood" }, { en: "Well-supported, modest benefit" }, { en: "Rarely, it stirs up upsetting memories; stop if it makes things worse." }],
         [{ en: "Grounding (5-4-3-2-1)" }, { en: "Panic, feeling unreal, flashbacks" }, { en: "Traditional, limited evidence" }, { en: "None known." }],
         [{ en: "Chamomile (tea or extract)" }, { en: "Anxiety, sleep" }, { en: "Traditional, limited evidence (a few small trials for anxiety)" }, { en: "Allergy risk, including rare severe reactions, especially if allergic to ragweed, daisies, marigolds, or chrysanthemums. Can interact with blood thinners. Avoid in pregnancy." }],
@@ -637,9 +696,9 @@ export const mind: Section = {
       caption: { en: "A step-by-step plan" },
       head: [{ en: "When" }, { en: "What to do" }],
       rows: [
-        [{ en: "Now (before anything happens)" }, { en: "Write the crisis numbers (988, 1-800-985-5990, 1-800-799-7233, local doctor) on paper and put them in your kit. Ask doctors about emergency supplies of any prescription mental health medicines. Make a plan with any heavy daily drinker. Learn and practice slow breathing and muscle relaxation as a family. Learn your street's baseline. Agree on a family code word." }],
+        [{ en: "Now (before anything happens)" }, { en: "Write the crisis numbers (988, 1-800-985-5990, 1-800-799-7233, local doctor) on paper and put them in your kit. Ask doctors about emergency supplies of any prescription mental health medicines. Make a plan with any heavy daily drinker. Learn and practice slow breathing and muscle relaxation as a family. Learn your street's baseline. Agree on a family code word. Start a family library of paper books, and a spare pair of reading glasses for anyone who needs them." }],
         [{ en: "First 72 hours" }, { en: "STOP before acting. Count heads, give everyone a job, explain to children in simple words. Check news only at set times from trusted sources. Sleep in shifts if someone must watch. Use breathing and grounding for anyone who panics." }],
-        [{ en: "By 90 days" }, { en: "Set a daily routine and a job chart. Start short family meetings. Keep some school going. Do one enjoyable thing every day. Watch for friction and fix the setup, not the person. Taper caffeine if supplies are low. Play awareness games." }],
+        [{ en: "By 90 days" }, { en: "Set a daily routine and a job chart. Start short family meetings. Keep some school going. Do one enjoyable thing every day. Read aloud daily, especially with young children. Watch for friction and fix the setup, not the person. Taper caffeine if supplies are low. Play awareness games." }],
         [{ en: "By 6 months" }, { en: "Check on each person one by one: sleep, appetite, mood, worries. Anyone with problems lasting more than a month gets help as soon as it can be reached. Keep routines and celebrations going (birthdays, holidays) in whatever form you can." }],
         [{ en: "By 1 year" }, { en: "Mark the losses together. Teach older children psychological first aid basics (look, listen, link). Review which friction fixes worked and which rules need updating." }],
         [{ en: "By 2 years" }, { en: "Look back on what the family has learned and handled. Share skills with neighbors; helping others is one of the strongest protections for your own mind. Keep watching for long-term depression or PTSD and get treatment when it is available." }],
@@ -676,6 +735,14 @@ export const mind: Section = {
     { type: "source", title: "5 Action Steps to Help Someone Having Thoughts of Suicide", publisher: "NIMH", url: "https://www.nimh.nih.gov/health/publications/5-action-steps-to-help-someone-having-thoughts-of-suicide" },
     { type: "source", title: "How and Why the 5 Steps Can Help", publisher: "#BeThe1To (988 Suicide & Crisis Lifeline)", url: "https://bethe1to.com/bethe1to-steps-evidence/" },
     { type: "source", title: "National Domestic Violence Hotline", publisher: "The Hotline (funded by U.S. Department of Health and Human Services)", url: "https://www.thehotline.org/" },
+    { type: "source", title: "Literacy Promotion: An Essential Component of Primary Care Pediatric Practice: Policy Statement", publisher: "American Academy of Pediatrics (Klass, Miller-Fitzwater, High; Pediatrics, 2024)", url: "https://doi.org/10.1542/peds.2024-069090" },
+    { type: "source", title: "Beyond Literacy: Shared Reading Starting at Birth Offers Lifelong Benefits", publisher: "American Academy of Pediatrics (HealthyChildren.org)", url: "https://www.healthychildren.org/English/news/Pages/beyond-literacy-shared-reading-starting-in-infancy-offers-lifelong-benefits.aspx" },
+    { type: "source", title: "Stress Management Strategies For Students: The Immediate Effects Of Yoga, Humor, And Reading On Stress", publisher: "Journal of College Teaching & Learning (Rizzolo et al., Seton Hall University, 2009)", url: "https://clutejournals.com/index.php/TLC/article/view/1117" },
+    { type: "source", title: "Reading 'can help reduce stress' (the unpublished 6-minute, 68% claim)", publisher: "The Telegraph (report on a Mindlab International study, 2009)", url: "https://www.telegraph.co.uk/health/healthnews/5070874/Reading-can-help-reduce-stress.html" },
+    { type: "source", title: "Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness", publisher: "Proceedings of the National Academy of Sciences (Chang, Aeschbach, Duffy, Czeisler, 2015)", url: "https://pubmed.ncbi.nlm.nih.gov/25535358/" },
+    { type: "source", title: "Self-help books for depression: how can practitioners and patients make the right choice?", publisher: "British Journal of General Practice (Anderson et al., 2005)", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC1463163" },
+    { type: "source", title: "Bibliotherapy: the review, organization, and dissemination of recommended reading for psychiatry patients (summary of bibliotherapy meta-analyses)", publisher: "British Columbia Medical Journal", url: "https://bcmj.org/node/10498" },
+    { type: "source", title: "Eye myths: reading in dim light", publisher: "American Academy of Ophthalmology", url: "https://www.aao.org/eye-health/tips-prevention/five-vision-myths" },
     { type: "source", title: "Anxiety and Complementary Health Approaches: What the Science Says (chamomile, kava, lavender)", publisher: "NCCIH", url: "https://www.nccih.nih.gov/health/providers/digest/anxiety-and-complementary-health-approaches-science" },
     { type: "source", title: "Herbal treatment for anxiety: Is it effective?", publisher: "Mayo Clinic", url: "https://www.mayoclinic.org/diseases-conditions/generalized-anxiety-disorder/expert-answers/herbal-treatment-for-anxiety/FAQ-20057945" },
     { type: "source", title: "St. John's Wort and Depression: In Depth", publisher: "NCCIH", url: "https://www.nccih.nih.gov/health/st-johns-wort-and-depression-in-depth" },

@@ -171,6 +171,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'A washable period pad made of layers of soft cotton, worn in the underwear and fastened with snaps around it; one can last for years.',
     },
+    sketch: 'sewn-cloth-pad',
   },
   {
     id: 'cold-frame',
@@ -252,6 +253,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'A calming breathing exercise: a full breath in through the nose, a second short sip of air on top, then a long, slow breath out through the mouth, repeated for a few minutes.',
     },
+    sketch: 'cyclic-sighing',
   },
   {
     id: 'dental-elevator',
@@ -578,6 +580,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'A cold person bundled in thick insulation (sleeping bags, blankets) with a plastic layer outside it and warm bottles at the chest, used to rewarm them away from a warm building. Also called a burrito wrap.',
     },
+    sketch: 'hypothermia-wrap',
   },
   {
     id: 'insect-repellent',
@@ -600,6 +603,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'An observation game used by Scouts and the military: look at a tray of small objects for a minute, cover it, and list everything you remember.',
     },
+    sketch: 'kims-game',
   },
   {
     id: 'lamp-oil',
@@ -797,6 +801,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'A relaxation exercise: squeeze one group of muscles for about 5 seconds, let go, and move up the body from the feet to the face.',
     },
+    sketch: 'progressive-muscle-relaxation',
   },
   {
     id: 'propane-cylinder',

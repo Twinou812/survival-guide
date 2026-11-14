@@ -87,6 +87,7 @@ export const menstrualCare: Section = {
         { en: "Change it every 3 to 6 hours, or sooner if it feels wet." },
       ],
     },
+    { type: "sketch", sketch: "no-sew-pad", caption: { en: "No-sew pad: a square of cotton cloth, folded into a thick strip, laid in the crotch of snug underwear." } },
     { type: "h", id: "sewn-pad", text: { en: "Sewn pad with wings" } },
     {
       type: "steps",
@@ -111,6 +112,7 @@ export const menstrualCare: Section = {
         { en: "Make different sizes: thin liners for light days, regular pads, and longer, thicker night pads." },
       ],
     },
+    { type: "sketch", sketch: "sewn-cloth-pad", caption: { en: "Sewn pad with wings: the dashed line inside shows where the absorbent core sits; a snap on each wing fastens under the underwear. At the right, the layers stacked: soft top, core, backing." } },
 
     // ==================================================================
     { type: "h", id: "wear-and-change", text: { en: "Wearing and changing" } },
@@ -145,6 +147,7 @@ export const menstrualCare: Section = {
         { en: "Store clean, fully dry pads in a clean cloth bag or box, away from used ones." },
       ],
     },
+    { type: "sketch", sketch: "pad-drying-line", caption: { en: "Dry pads unfolded in the sun. For privacy, a thin cloth draped over the line still lets air through." } },
     {
       type: "list",
       items: [

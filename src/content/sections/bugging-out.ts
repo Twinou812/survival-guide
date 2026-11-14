@@ -133,6 +133,7 @@ export const buggingOut: Section = {
         { en: "Walk around the block. If it sways, pulls you backward, or hurts, repack and take something out." },
       ],
     },
+    { type: "sketch", sketch: "pack-loading", caption: { en: "Packing order: sleeping bag at the bottom, heavy food and water in the middle against your back, rain jacket on top, small items in the lid. Hip belt on the hip bones." } },
 
     // ==================================================================
     { type: "h", id: "car-vs-foot", text: { en: "Car kit and on-foot kit" } },
@@ -201,6 +202,7 @@ export const buggingOut: Section = {
         { en: "Sleep without socks if your feet have been wet for a long time, so the skin can dry and recover; otherwise wear the dry camp socks." },
       ],
     },
+    { type: "sketch", sketch: "dry-socks-break", caption: { en: "At every rest: boots off, dry and air the feet, tuck wet socks at the waist to dry, and put on a dry pair." } },
     {
       type: "warning",
       text: {
@@ -230,6 +232,7 @@ export const buggingOut: Section = {
         { en: "Trash-bag poncho: cut a hole for the face in the bottom of a contractor bag and pull it over your head and pack, or cut holes for head and arms. It blocks wind and rain in an emergency. Never put a plastic bag over a young child's head; cut a large neck opening and keep the face clear." },
       ],
     },
+    { type: "sketch", sketch: "trash-bag-poncho", caption: { en: "A contractor bag makes a quick poncho over you and your pack. Keep the face fully open." } },
     {
       type: "table",
       caption: { en: "Watch for the \"umbles\": early hypothermia warning signs" },
@@ -262,6 +265,7 @@ export const buggingOut: Section = {
         { en: "If they are not breathing normally, start CPR (see {{medical}}). A person who seems dead from cold may still be saved." },
       ],
     },
+    { type: "sketch", sketch: "hypothermia-wrap", caption: { en: "A hypothermia wrap: pad underneath, sleeping bag and blankets around, plastic on the outside, face open, a warm bottle at the chest." } },
     {
       type: "p",
       text: {
