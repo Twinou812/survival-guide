@@ -3,7 +3,7 @@
 A free, offline survival guide for families. No accounts, no tracking, no data mining.
 On The House Software.
 
-**Phase 1: app shell.** React + Vite + Capacitor. One codebase feeds the Android app and the
+**Phase 2: content, one section at a time.** Written so far: Water. React + Vite + Capacitor. One codebase feeds the Android app and the
 installable offline website (which is how iPhone users get it for now).
 
 ## What's in Phase 1
@@ -60,13 +60,37 @@ offline caching to work.
 
 ```
 src/
-  content/       the single content source (sections, glossary, types)
-  sketches/      line drawings
+  content/
+    sections/    one file per section (water.ts, medical.ts, ...); index.ts sets the order
+    glossary.ts  every tool and term, alphabetical
+    types.ts     the block types a section can use
+  sketches/
+    svg/         one .svg file per drawing; the file name is the sketch id
   i18n/          English strings + the language list
   screens/       Disclaimer, Home, Section, Glossary, Settings
   components/    top bar, bottom nav, rich text, glossary sheet, content blocks
+scripts/
+  content-check.ts   checks links, drawings, tables, and sources on every dev/build run
 sw-template.js   offline cache script (filled in at build time)
 ```
+
+## Writing a section
+
+A section is a list of blocks: `p` (paragraph), `h` (heading, with an `id` for the
+"On this page" list), `steps` (numbered), `list` (bullets), `warning`, `sketch`, `table`,
+and `source`. Sources are gathered into a list at the end of the page automatically.
+
+Inside any text:
+
+- `[[term-id]]` or `[[term-id|words shown]]` links to the glossary.
+- `{{section-id}}` or `{{section-id|words shown}}` links to another section.
+
+Drawings are plain SVG files in `src/sketches/svg/`: `viewBox` only, `stroke="currentColor"`,
+`fill="none"`, no text. They can be drawn or edited in any vector program (Inkscape is free).
+
+`npm run dev` and `npm run build` run the content check. A broken link, a missing drawing,
+a table row with the wrong number of cells, or a written section with no sources stops the
+build with a plain message saying where.
 
 ## When the name is chosen
 
@@ -78,4 +102,4 @@ change after that.
 ## Still to do before launch
 
 - Have a lawyer review the disclaimer text.
-- Replace the sample Water paragraph with real Phase 2 content.
+- Write the remaining sections (Phase 2).

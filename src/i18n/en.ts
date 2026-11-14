@@ -34,7 +34,10 @@ const en = {
   sectionComingSoon: 'This section is being written.',
   sectionComingSoonDetail:
     'It will have step-by-step guidance, simple drawings, and sources you can check.',
-  sectionSample: 'Sample',
+  onThisPage: 'On this page',
+  sources: 'Sources',
+  sourcesNote:
+    'Where this section gets its facts. The links are for checking later from any connected device.',
 
   // Glossary
   glossaryTitle: 'Glossary',

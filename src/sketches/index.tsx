@@ -1,35 +1,34 @@
-import type { ReactElement } from 'react';
-
-// Simple black-and-white line sketches. Rules for every drawing:
-//   - viewBox only (no fixed width/height), stroke="currentColor", fill="none"
+// Simple black-and-white line sketches, one .svg file per drawing in ./svg/.
+// The file name (without .svg) is the sketch id used in sections and the glossary.
+//
+// Rules for every drawing (checked by scripts/content-check.ts on every build):
+//   - viewBox only (no width/height on the <svg>), stroke="currentColor", fill="none"
+//     (fill="currentColor" is fine for small solid parts like a stone)
 //   - plain lines a person with no experience can read at a glance
-//   - no text inside the drawing (captions are translated separately)
+//   - no <text> inside the drawing (captions are translated separately)
+//   - no scripts, images, or links: the files are inlined into the page
+//
+// Plain .svg files can be opened and edited in any drawing program, and Phase 4 reuses
+// them directly for the printable PDF.
 
-const BungWrench = (
-  <svg viewBox="0 0 320 120" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-    {/* handle */}
-    <path d="M70 52 H250 V68 H70 Z" />
-    {/* large end: two prongs for the 2-inch cap */}
-    <path d="M70 52 L40 40 V30 H20 V90 H40 V80 L70 68" />
-    <path d="M20 46 H8 M20 74 H8" />
-    {/* small end: square tooth for the 3/4-inch cap */}
-    <path d="M250 52 L272 46 H300 V74 H272 L250 68" />
-    <path d="M282 46 V36 H296 V46 M282 74 V84 H296 V74" />
-    {/* hanging hole */}
-    <circle cx="160" cy="60" r="4" />
-  </svg>
+const files = import.meta.glob('./svg/*.svg', {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+}) as Record<string, string>;
+
+export const SKETCHES: Record<string, string> = Object.fromEntries(
+  Object.entries(files).map(([path, svg]) => [
+    path.slice('./svg/'.length, -'.svg'.length),
+    // The wrapper carries the label; hide the drawing itself from screen readers.
+    svg.replace('<svg ', '<svg aria-hidden="true" focusable="false" '),
+  ]),
 );
-
-export const SKETCHES: Record<string, ReactElement> = {
-  'bung-wrench': BungWrench,
-};
 
 export function Sketch({ id, label }: { id: string; label: string }) {
   const svg = SKETCHES[id];
   if (!svg) return null;
-  return (
-    <div className="sketch" role="img" aria-label={label}>
-      {svg}
-    </div>
-  );
+  // Safe: these are our own bundled files, checked at build time to contain no
+  // scripts, links, or external references.
+  return <div className="sketch" role="img" aria-label={label} dangerouslySetInnerHTML={{ __html: svg }} />;
 }

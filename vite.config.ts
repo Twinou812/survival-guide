@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react';
 import { createHash } from 'node:crypto';
 import { readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
+import { checkContent } from './scripts/content-check';
+import { GLOSSARY } from './src/content/glossary';
+import { SECTIONS } from './src/content/sections';
 
 // Strict content policy for production builds: the app may only load its own files.
 // No analytics, no fonts from the web, no network calls. (Skipped in dev because
@@ -64,11 +67,31 @@ function offlineServiceWorker(): Plugin {
   };
 }
 
+// Checks links, sketches, tables, and sources (scripts/content-check.ts).
+// A production build stops on errors. The dev server prints them and keeps running.
+function contentCheck(): Plugin {
+  let isBuild = false;
+  return {
+    name: 'content-check',
+    configResolved(config) {
+      isBuild = config.command === 'build';
+    },
+    buildStart() {
+      const { errors, warnings } = checkContent(SECTIONS, GLOSSARY, 'src/sketches/svg');
+      for (const w of warnings) this.warn(w);
+      if (errors.length === 0) return;
+      const report = `Content check found ${errors.length} problem(s):\n  - ${errors.join('\n  - ')}`;
+      if (isBuild) this.error(report);
+      else console.error(report);
+    },
+  };
+}
+
 export default defineConfig({
   // Relative paths so the same build works inside the Android app, at the site root,
   // or in a subfolder like onthehousesoftware.com/survival/.
   base: './',
-  plugins: [react(), cspPlugin(), offlineServiceWorker()],
+  plugins: [contentCheck(), react(), cspPlugin(), offlineServiceWorker()],
   build: {
     target: 'es2020',
     sourcemap: false,

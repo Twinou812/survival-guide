@@ -6,15 +6,20 @@ export type Localized = { en: string } & Partial<Record<string, string>>;
 
 /**
  * A block of section content.
- * Inside text, link a glossary term with [[term-id]] or [[term-id|words shown]].
+ * Inside any text:
+ *   [[term-id]] or [[term-id|words shown]]        → glossary link (tap for sketch + one-liner)
+ *   {{section-id}} or {{section-id|words shown}}  → link to another section
  */
 export type Block =
   | { type: 'p'; text: Localized }
-  | { type: 'h'; text: Localized }
+  /** Heading. `id` makes it a stop in the "On this page" list (unique within the section). */
+  | { type: 'h'; id: string; text: Localized }
   | { type: 'steps'; items: Localized[] }
   | { type: 'list'; items: Localized[] }
   | { type: 'warning'; text: Localized }
   | { type: 'sketch'; sketch: string; caption: Localized }
+  /** Small table. Every row has the same number of cells as `head`. */
+  | { type: 'table'; caption: Localized; head: Localized[]; rows: Localized[][] }
   | { type: 'source'; title: string; publisher: string; url?: string };
 
 export interface Section {
@@ -30,7 +35,7 @@ export interface GlossaryTerm {
   name: Localized;
   /** One plain sentence. */
   definition: Localized;
-  /** Key in src/sketches/index.ts */
+  /** Key in src/sketches/index.tsx */
   sketch?: string;
 }
 
