@@ -204,8 +204,14 @@ h1, h2 { line-height: 1.25; }
   font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--ink-soft); margin: 0 0 6px;
 }
-.toc ol { margin: 0; padding-inline-start: 22px; }
-.toc li { margin-block: 2px; }
+/* Numbers are drawn by a counter in a flex row, so a long heading that wraps keeps
+   its number beside the first line (native markers sat on the last line of the button). */
+.toc ol { margin: 0; padding: 0; list-style: none; counter-reset: toc; }
+.toc li { margin-block: 2px; counter-increment: toc; display: flex; align-items: baseline; gap: 8px; }
+.toc li::before {
+  content: counter(toc) "."; flex: none; min-width: 1.8em; text-align: end;
+  color: var(--ink-soft); font-variant-numeric: tabular-nums;
+}
 .toc button {
   font: inherit; color: inherit; background: none; border: 0; cursor: pointer;
   padding: 8px 0; min-height: 44px; text-align: start;
@@ -262,6 +268,9 @@ figcaption { color: var(--ink-soft); font-size: 0.9rem; text-align: center; marg
   padding: 12px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface);
   scroll-margin-top: 72px;
 }
+/* Terms with no drawing: let the text use the full card width. */
+.glossary-list li > div:only-child { grid-column: 1 / -1; }
+@media (max-width: 380px) { .glossary-list li { grid-template-columns: 96px 1fr; gap: 10px; } }
 .glossary-list li.is-target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
 .glossary-list .sketch { padding: 6px; border: 0; }
 .glossary-list h2 { font-size: 1.05rem; margin: 0 0 4px; }
