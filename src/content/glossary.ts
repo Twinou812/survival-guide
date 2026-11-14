@@ -29,6 +29,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'bucket-planter',
+    name: { en: 'Bucket planter' },
+    definition: {
+      en: 'A food-grade 5-gallon (19-liter) bucket with drain holes in the bottom, filled with potting soil, used to grow one large vegetable plant such as a tomato.',
+    },
+    sketch: 'bucket-planter',
+  },
+  {
     id: 'bung-wrench',
     name: { en: 'Bung wrench' },
     definition: {
@@ -66,12 +74,42 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'clay-pot-cooler',
   },
   {
+    id: 'cold-frame',
+    name: { en: 'Cold frame' },
+    definition: {
+      en: 'A bottomless box with a clear lid that sits on the ground over plants, trapping the sun’s warmth to protect them from frost. The lid is opened on sunny days so plants do not overheat.',
+    },
+    sketch: 'cold-frame',
+  },
+  {
     id: 'cold-room',
     name: { en: 'Cold room' },
     definition: {
       en: 'A small room or closet kept cold by outside walls and cold air, insulated from the warm house, used to store crops and canned food.',
     },
     sketch: 'cold-room',
+  },
+  {
+    id: 'compost',
+    name: { en: 'Compost' },
+    definition: {
+      en: 'Dark, crumbly soil made by letting plant scraps, leaves, and other garden waste rot in a pile. It feeds plants and improves any soil.',
+    },
+    sketch: 'compost-bin',
+  },
+  {
+    id: 'cool-season-crop',
+    name: { en: 'Cool-season crop' },
+    definition: {
+      en: 'A vegetable that grows best in cool weather and can take a light frost, such as peas, lettuce, spinach, cabbage, kale, carrots, and potatoes.',
+    },
+  },
+  {
+    id: 'crop-rotation',
+    name: { en: 'Crop rotation' },
+    definition: {
+      en: 'Moving each family of vegetables to a different bed each year, so pests and diseases that live in the soil do not build up.',
+    },
   },
   {
     id: 'curb-key',
@@ -149,12 +187,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'water-jug',
   },
   {
+    id: 'frost-date',
+    name: { en: 'Frost date' },
+    definition: {
+      en: 'The average date of the last frost in spring or the first frost in autumn where you live. Frost can still come after the spring date, so it is a guide, not a promise.',
+    },
+  },
+  {
     id: 'gamma-lid',
     name: { en: 'Gamma lid' },
     definition: {
       en: 'A two-part lid for a plastic bucket. A ring snaps onto the rim, and the center screws in and out, so the bucket is easy to open and reseal.',
     },
     sketch: 'gamma-lid',
+  },
+  {
+    id: 'germination-test',
+    name: { en: 'Germination test' },
+    definition: {
+      en: 'A simple check of old seed: 10 seeds rolled in a damp paper towel for 5 to 10 days. The number that sprout tells you how many will grow.',
+    },
+    sketch: 'germination-test',
   },
   {
     id: 'gravity-filter',
@@ -178,6 +231,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A hand-cranked grinder that clamps to a table and turns whole wheat, corn, or other dry grain into flour.',
     },
     sketch: 'grain-mill',
+  },
+  {
+    id: 'hardening-off',
+    name: { en: 'Hardening off' },
+    definition: {
+      en: 'Getting young plants raised indoors used to sun, wind, and cool nights a little more each day for 7 to 10 days before planting them outside.',
+    },
   },
   {
     id: 'hardware-cloth',
@@ -215,6 +275,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A small camping water filter packed with tiny tubes whose walls have holes too small for bacteria and parasites. Water is squeezed or dripped through it. Ruined if it freezes while wet.',
     },
     sketch: 'hollow-fiber-filter',
+  },
+  {
+    id: 'hybrid-seed',
+    name: { en: 'Hybrid seed (F1)' },
+    definition: {
+      en: 'Seed made by crossing two different parent varieties. The plants grow well, but seed saved from them does not grow true, so new seed must be bought each year.',
+    },
   },
   {
     id: 'low-acid-food',
@@ -255,6 +322,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'mulch',
+    name: { en: 'Mulch' },
+    definition: {
+      en: 'A layer of straw, leaves, grass clippings, or wood chips spread over the soil to keep it damp and cool and to smother weeds.',
+    },
+  },
+  {
     id: 'mylar-bag',
     name: { en: 'Mylar bag' },
     definition: {
@@ -269,6 +343,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A large metal can holding about 3 quarts (3 liters). Dry foods sold for long-term storage often come in these.',
     },
     sketch: 'number-10-can',
+  },
+  {
+    id: 'open-pollinated',
+    name: { en: 'Open-pollinated seed' },
+    definition: {
+      en: 'Seed from plants that grow true: seed saved from them grows into plants like the parent. Heirloom seeds are open-pollinated. These are the seeds to save.',
+    },
   },
   {
     id: 'oxygen-absorber',
@@ -310,6 +391,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'rain-barrel',
   },
   {
+    id: 'raised-bed',
+    name: { en: 'Raised bed' },
+    definition: {
+      en: 'A garden bed built up above the ground inside a frame of wood, block, or metal and filled with good soil. Works on rock, concrete, clay, or poor soil.',
+    },
+    sketch: 'raised-bed',
+  },
+  {
     id: 'ready-to-feed-formula',
     name: { en: 'Ready-to-feed formula' },
     definition: {
@@ -333,6 +422,37 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'barrel-mound',
   },
   {
+    id: 'row-cover',
+    name: { en: 'Row cover' },
+    definition: {
+      en: 'Thin, white garden fabric laid over plants or over wire hoops. It lets in light and water, keeps out many insects, and gives a few degrees of frost protection.',
+    },
+    sketch: 'row-cover',
+  },
+  {
+    id: 'seed-potato',
+    name: { en: 'Seed potato' },
+    definition: {
+      en: 'A potato grown and checked to be free of disease, sold for planting. Small ones are planted whole; big ones are cut into pieces, each with an eye (bud).',
+    },
+    sketch: 'seed-potato',
+  },
+  {
+    id: 'shade-cloth',
+    name: { en: 'Shade cloth' },
+    definition: {
+      en: 'Woven or knitted cloth hung over plants to block part of the sun, sold by how much light it blocks. For vegetables in hot weather, 30% to 50% is used.',
+    },
+  },
+  {
+    id: 'sheet-mulching',
+    name: { en: 'Sheet mulching' },
+    definition: {
+      en: 'Making a garden bed on top of lawn with no digging: cardboard to smother the grass, then layers of leaves, scraps, and compost that rot into soil. Also called lasagna gardening.',
+    },
+    sketch: 'sheet-mulch',
+  },
+  {
     id: 'siphon-pump',
     name: { en: 'Siphon pump' },
     definition: {
@@ -349,12 +469,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'sodis',
   },
   {
+    id: 'soil-test',
+    name: { en: 'Soil test' },
+    definition: {
+      en: 'A lab check of a cup or two of your soil that tells you its nutrients and acidity (pH), and, if you ask, whether it holds lead. Extension offices and soil labs do them.',
+    },
+  },
+  {
     id: 'solar-still',
     name: { en: 'Solar still' },
     definition: {
       en: 'A hole in the ground covered with clear plastic. Sun heats the ground, water rises as vapor, collects on the plastic, and drips into a container.',
     },
     sketch: 'solar-still',
+  },
+  {
+    id: 'sprouting-jar',
+    name: { en: 'Sprouting jar' },
+    definition: {
+      en: 'A glass jar with a screen or cloth lid, used to soak, rinse, and drain seeds or beans until they sprout into fresh food in a few days.',
+    },
+    sketch: 'sprouting-jar',
   },
   {
     id: 'storage-mound',
@@ -365,10 +500,33 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'storage-mound',
   },
   {
+    id: 'straw-bale-garden',
+    name: { en: 'Straw bale garden' },
+    definition: {
+      en: 'Vegetables planted straight into a straw bale that has been soaked and fed until its inside starts to rot. Needs no soil underneath and no digging.',
+    },
+    sketch: 'straw-bale',
+  },
+  {
+    id: 'sweet-potato-slip',
+    name: { en: 'Sweet potato slip' },
+    definition: {
+      en: 'A leafy shoot that grows from a sweet potato. Snapped off and planted, it grows into a new plant. Sweet potatoes are grown from slips, not seeds.',
+    },
+    sketch: 'sweet-potato-slips',
+  },
+  {
     id: 'unscented-bleach',
     name: { en: 'Unscented liquid bleach' },
     definition: {
       en: 'Plain household chlorine bleach with no perfume or added cleaners. The label should say 6% or 8.25% sodium hypochlorite.',
+    },
+  },
+  {
+    id: 'warm-season-crop',
+    name: { en: 'Warm-season crop' },
+    definition: {
+      en: 'A vegetable that needs warm soil and is hurt or killed by frost, such as tomatoes, peppers, beans, squash, cucumbers, corn, okra, and sweet potatoes.',
     },
   },
   {
