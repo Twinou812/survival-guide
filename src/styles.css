@@ -239,6 +239,9 @@ figcaption { color: var(--ink-soft); font-size: 0.9rem; text-align: center; marg
   padding: 16px; color: var(--ink);
 }
 .sketch svg { display: block; width: 100%; height: auto; max-height: 220px; }
+/* Shapes marked class="cover" are filled with the card color so they hide the lines
+   of whatever is drawn behind them (an arm in front of a body, a leg over a leg). */
+.sketch svg .cover { fill: var(--surface); }
 
 /* Glossary links inside text */
 .term {

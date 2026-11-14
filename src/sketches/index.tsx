@@ -7,6 +7,9 @@
 //   - plain lines a person with no experience can read at a glance
 //   - no <text> inside the drawing (captions are translated separately)
 //   - no scripts, images, or links: the files are inlined into the page
+//   - people and limbs are drawn as closed outlines. Give a shape class="cover" and it is
+//     filled with the card color (styles.css), hiding the lines behind it, so a front arm
+//     can overlap the body. Draw back parts first, front parts last.
 //
 // Plain .svg files can be opened and edited in any drawing program, and Phase 4 reuses
 // them directly for the printable PDF.

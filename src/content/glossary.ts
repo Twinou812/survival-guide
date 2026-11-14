@@ -6,6 +6,21 @@ import type { GlossaryTerm } from './types';
 
 export const GLOSSARY: GlossaryTerm[] = [
   {
+    id: 'abdominal-thrusts',
+    name: { en: 'Abdominal thrusts' },
+    definition: {
+      en: 'Quick, hard pulls in and up with a fist just above the belly button, used to force out something stuck in the throat of a choking adult or child over 1 year. Also called the Heimlich maneuver.',
+    },
+    sketch: 'abdominal-thrusts',
+  },
+  {
+    id: 'aed',
+    name: { en: 'AED (automatic defibrillator)' },
+    definition: {
+      en: 'A portable machine found in many schools, stores, and offices that talks you through each step and can shock a stopped heart back into a normal beat. Anyone can use one.',
+    },
+  },
+  {
     id: 'appliance-thermometer',
     name: { en: 'Appliance thermometer' },
     definition: {
@@ -20,6 +35,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'Sending generator power into a house by plugging it into a wall outlet or dryer outlet. It can push deadly electricity back out onto the power lines and kill utility workers or neighbors. Never do it.',
     },
     sketch: 'backfeed-cord',
+  },
+  {
+    id: 'baseline',
+    name: { en: 'Baseline (awareness)' },
+    definition: {
+      en: 'What is normal for a place and time: the usual sounds, people, cars, and routines. Anything that breaks the baseline (an anomaly) is worth a second look.',
+    },
   },
   {
     id: 'bathtub-bladder',
@@ -59,6 +81,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A flat metal tool for unscrewing the two plastic caps (bungs) on top of a water or fuel drum.',
     },
     sketch: 'bung-wrench',
+  },
+  {
+    id: 'butterfly-strip',
+    name: { en: 'Butterfly strip' },
+    definition: {
+      en: 'A small strip of tape with wide sticky ends and a narrow, non-sticky middle, laid across a cut to hold its edges together. You can make one by folding the middle of a piece of tape.',
+    },
+    sketch: 'butterfly-strip',
   },
   {
     id: 'button-battery',
@@ -128,6 +158,21 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'clay-pot-cooler',
   },
   {
+    id: 'cling-film',
+    name: { en: 'Cling film' },
+    definition: {
+      en: 'Thin clear plastic food wrap. Laid loosely over a burn after cooling, it keeps the burn clean and moist and does not stick to it.',
+    },
+    sketch: 'burn-cooling',
+  },
+  {
+    id: 'cloth-pad',
+    name: { en: 'Cloth pad (reusable)' },
+    definition: {
+      en: 'A washable period pad made of layers of soft cotton, worn in the underwear and fastened with snaps around it; one can last for years.',
+    },
+  },
+  {
     id: 'cold-frame',
     name: { en: 'Cold frame' },
     definition: {
@@ -173,6 +218,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'crisis-lines',
+    name: { en: 'Crisis lines (988)' },
+    definition: {
+      en: 'Free phone and text lines with trained counselors, open 24 hours in the U.S.: call or text 988 for suicide or mental health crisis, 1-800-985-5990 for distress after a disaster, 1-800-799-7233 for abuse at home.',
+    },
+  },
+  {
     id: 'crop-rotation',
     name: { en: 'Crop rotation' },
     definition: {
@@ -193,6 +245,29 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Letting freshly picked onions, potatoes, squash, or garlic rest for days or weeks so their skins toughen and small cuts heal. Cured vegetables keep much longer.',
     },
+  },
+  {
+    id: 'cyclic-sighing',
+    name: { en: 'Cyclic sighing' },
+    definition: {
+      en: 'A calming breathing exercise: a full breath in through the nose, a second short sip of air on top, then a long, slow breath out through the mouth, repeated for a few minutes.',
+    },
+  },
+  {
+    id: 'dental-elevator',
+    name: { en: 'Dental elevator' },
+    definition: {
+      en: 'A dental tool with a handle and a narrow, curved blade, used to loosen a tooth in its socket before it is lifted out, or to lift out a broken root.',
+    },
+    sketch: 'dental-tools',
+  },
+  {
+    id: 'dental-forceps',
+    name: { en: 'Dental forceps' },
+    definition: {
+      en: 'Pliers made for gripping a tooth by the root just under the gum to lift it out. No. 150 is made for upper teeth and No. 151 for lower teeth.',
+    },
+    sketch: 'dental-tools',
   },
   {
     id: 'disposable-gloves',
@@ -228,6 +303,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Dry ice' },
     definition: {
       en: 'Frozen carbon dioxide, far colder than normal ice, sold in blocks to keep freezers and coolers cold. Never touch it with bare hands, and never use it in a closed room or car: the gas it gives off can suffocate.',
+    },
+  },
+  {
+    id: 'emergency-blanket',
+    name: { en: 'Emergency blanket (space blanket)' },
+    definition: {
+      en: 'A thin, folded sheet of shiny plastic that weighs almost nothing; wrapped around a person it blocks wind and wet and holds in some body heat.',
     },
   },
   {
@@ -315,6 +397,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'gaiters',
+    name: { en: 'Gaiters' },
+    definition: {
+      en: 'Fabric covers that wrap the lower leg and the top of the boot, keeping rain, snow, mud, and pebbles from getting into the boot.',
+    },
+  },
+  {
     id: 'game-trail',
     name: { en: 'Game trail' },
     definition: {
@@ -346,6 +435,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'germination-test',
   },
   {
+    id: 'go-bag',
+    name: { en: 'Go-bag' },
+    definition: {
+      en: 'A packed backpack kept ready for each person, holding what they need for about three days if they must leave home in a hurry.',
+    },
+  },
+  {
     id: 'gravity-filter',
     name: { en: 'Gravity filter' },
     definition: {
@@ -358,6 +454,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Greywater' },
     definition: {
       en: 'Used water from washing hands, dishes, clothes, or bathing. Fine for flushing a toilet or watering plants, but not safe to drink.',
+    },
+  },
+  {
+    id: 'grounding',
+    name: { en: 'Grounding' },
+    definition: {
+      en: 'Pulling attention back to the present through the senses, for example by naming 5 things you see, 4 you feel, 3 you hear, 2 you smell, and 1 you taste. Used during panic or upsetting memories.',
     },
   },
   {
@@ -434,6 +537,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'hemostatic-gauze',
+    name: { en: 'Hemostatic gauze' },
+    definition: {
+      en: 'Gauze treated with a substance that helps blood clot faster. It is packed into a deep bleeding wound and held with hard pressure for at least 5 minutes.',
+    },
+  },
+  {
     id: 'high-acid-food',
     name: { en: 'High-acid food' },
     definition: {
@@ -463,6 +573,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'hypothermia-wrap',
+    name: { en: 'Hypothermia wrap' },
+    definition: {
+      en: 'A cold person bundled in thick insulation (sleeping bags, blankets) with a plastic layer outside it and warm bottles at the chest, used to rewarm them away from a warm building. Also called a burrito wrap.',
+    },
+  },
+  {
     id: 'insect-repellent',
     name: { en: 'Insect repellent' },
     definition: {
@@ -476,6 +593,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A portable heater that burns liquid kerosene with a wick. It has no chimney, so the room needs fresh air and a CO alarm.',
     },
     sketch: 'kerosene-heater',
+  },
+  {
+    id: 'kims-game',
+    name: { en: "Kim's Game" },
+    definition: {
+      en: 'An observation game used by Scouts and the military: look at a tray of small objects for a minute, cover it, and list everything you remember.',
+    },
   },
   {
     id: 'lamp-oil',
@@ -514,6 +638,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A small glass or plastic tube with a rubber bulb on top, for adding liquid one drop at a time. Keep one just for bleach and label it.',
     },
     sketch: 'medicine-dropper',
+  },
+  {
+    id: 'menstrual-cup',
+    name: { en: 'Menstrual cup' },
+    definition: {
+      en: 'A small, soft silicone cup that is folded and placed inside the vagina to collect period blood, then emptied, rinsed, and reused; boiled between periods.',
+    },
   },
   {
     id: 'micron',
@@ -569,12 +700,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'oral-rehydration-solution',
+    name: { en: 'Oral rehydration solution (ORS)' },
+    definition: {
+      en: 'A drink of clean water with exact amounts of salt and sugar that replaces the water and salts lost to diarrhea, vomiting, or heavy sweating. Sold as packets, or made at home with 1 liter of water, 6 level teaspoons of sugar, and 1/2 level teaspoon of salt.',
+    },
+    sketch: 'ors-bottle',
+  },
+  {
     id: 'oxygen-absorber',
     name: { en: 'Oxygen absorber' },
     definition: {
       en: 'A small packet of iron powder that soaks up the oxygen in a sealed container, keeping stored dry food fresh for years and killing insects. Works only in an airtight container, and only with dry food.',
     },
     sketch: 'oxygen-absorber',
+  },
+  {
+    id: 'panic-attack',
+    name: { en: 'Panic attack' },
+    definition: {
+      en: 'A sudden wave of intense fear with a pounding heart, fast breathing, shaking, and dizziness that peaks within minutes and then passes. Chest pain should still be checked as a possible heart attack.',
+    },
   },
   {
     id: 'pantry-pests',
@@ -646,6 +792,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'pressure-canner',
   },
   {
+    id: 'progressive-muscle-relaxation',
+    name: { en: 'Progressive muscle relaxation' },
+    definition: {
+      en: 'A relaxation exercise: squeeze one group of muscles for about 5 seconds, let go, and move up the body from the feet to the face.',
+    },
+  },
+  {
     id: 'propane-cylinder',
     name: { en: 'Propane cylinder' },
     definition: {
@@ -658,6 +811,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Protein poisoning (rabbit starvation)' },
     definition: {
       en: 'Sickness reported in people who eat only very lean meat with almost no fat or starch: diarrhea, weakness, and constant hunger. Prevented by eating fat and starch along with the meat.',
+    },
+  },
+  {
+    id: 'psychological-first-aid',
+    name: { en: 'Psychological first aid' },
+    definition: {
+      en: 'A simple way anyone can help a person in shock or distress after a crisis: look for safety and urgent needs, listen without pushing them to talk, and link them to practical help and to people they trust.',
+    },
+  },
+  {
+    id: 'ptsd',
+    name: { en: 'PTSD (posttraumatic stress disorder)' },
+    definition: {
+      en: 'A condition where reactions to a terrifying event (flashbacks, nightmares, avoiding reminders, feeling always on guard) last more than a month and get in the way of life. It is treatable.',
+    },
+  },
+  {
+    id: 'pul-fabric',
+    name: { en: 'PUL fabric' },
+    definition: {
+      en: 'Polyurethane laminate: a thin, soft fabric with a waterproof layer on one side, sold for cloth diapers and used as the leak-proof bottom of cloth pads.',
     },
   },
   {
@@ -696,6 +870,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Liquid baby formula sold sealed and sterile, ready to pour into a clean bottle with no water added. The safest choice for formula-fed babies in an emergency.',
     },
+  },
+  {
+    id: 'recovery-position',
+    name: { en: 'Recovery position' },
+    definition: {
+      en: 'Lying on the side with the top knee bent forward and the head tilted back a little, so a person who is breathing but will not wake up keeps a clear airway and can drain vomit or blood from the mouth.',
+    },
+    sketch: 'recovery-position',
   },
   {
     id: 'rocket-stove',
@@ -753,6 +935,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'seed-potato',
   },
   {
+    id: 'sepsis',
+    name: { en: 'Sepsis' },
+    definition: {
+      en: 'The body\'s extreme, life-threatening reaction to an infection. Signs include confusion, fast breathing, a fast heart rate, fever or feeling very cold, extreme pain, and clammy skin. It is a medical emergency.',
+    },
+  },
+  {
     id: 'septic-system',
     name: { en: 'Septic system' },
     definition: {
@@ -775,12 +964,33 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'sheet-mulch',
   },
   {
+    id: 'shock',
+    name: { en: 'Shock' },
+    definition: {
+      en: 'A dangerous state in which the body is not getting enough blood flow, after bleeding, burns, infection, dehydration, or a severe allergic reaction. Signs are pale, cool, clammy skin, a fast weak pulse, and confusion.',
+    },
+  },
+  {
     id: 'siphon-pump',
     name: { en: 'Siphon pump' },
     definition: {
       en: 'A tube with a squeeze bulb or small hand pump in it. A few squeezes start the water flowing out of a drum into a lower container. Keep one just for water.',
     },
     sketch: 'siphon-pump',
+  },
+  {
+    id: 'situational-awareness',
+    name: { en: 'Situational awareness' },
+    definition: {
+      en: 'Knowing what is happening around you, so you notice trouble early and have time to act. Calm attention, not fear.',
+    },
+  },
+  {
+    id: 'skin-glue',
+    name: { en: 'Skin glue (tissue adhesive)' },
+    definition: {
+      en: 'A medical glue painted over the top of a small, clean, closed cut to hold the edges together while it heals. It is never put inside the wound.',
+    },
   },
   {
     id: 'snare',
@@ -814,6 +1024,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'solar-still',
   },
   {
+    id: 'splint',
+    name: { en: 'Splint' },
+    definition: {
+      en: 'Anything stiff and well padded (a board, rolled magazines, a sleeping pad) tied along a broken or badly hurt limb to hold it still, reaching past the joint above and the joint below.',
+    },
+    sketch: 'forearm-splint',
+  },
+  {
     id: 'sprouting-jar',
     name: { en: 'Sprouting jar' },
     definition: {
@@ -845,12 +1063,34 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'straw-bale',
   },
   {
+    id: 'suture',
+    name: { en: 'Suture (stitches)' },
+    definition: {
+      en: 'Thread sewn through the skin to hold the edges of a clean, gaping cut together. A suture kit has a curved needle with the thread already attached.',
+    },
+    sketch: 'simple-stitch',
+  },
+  {
     id: 'sweet-potato-slip',
     name: { en: 'Sweet potato slip' },
     definition: {
       en: 'A leafy shoot that grows from a sweet potato. Snapped off and planted, it grows into a new plant. Sweet potatoes are grown from slips, not seeds.',
     },
     sketch: 'sweet-potato-slips',
+  },
+  {
+    id: 'temporary-filling',
+    name: { en: 'Temporary dental filling' },
+    definition: {
+      en: 'A soft paste sold in pharmacies that is pressed into a hole left by a lost filling or a broken tooth and hardens to protect it for days or weeks, until a dentist can fix it.',
+    },
+  },
+  {
+    id: 'tetanus',
+    name: { en: 'Tetanus' },
+    definition: {
+      en: 'A deadly illness from germs in soil that get into deep or dirty wounds and cause painful muscle spasms, often starting with a locked jaw. A vaccine prevents it; adults need a booster every 10 years.',
+    },
   },
   {
     id: 'tippy-tap',
@@ -861,12 +1101,34 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'tippy-tap',
   },
   {
+    id: 'tourniquet',
+    name: { en: 'Tourniquet' },
+    definition: {
+      en: 'A wide strap put tight around an arm or leg above a wound, with a rod (windlass) twisted to squeeze it until life-threatening bleeding stops. Buy a real one; belts and cords do not work.',
+    },
+    sketch: 'tourniquet',
+  },
+  {
+    id: 'toxic-shock-syndrome',
+    name: { en: 'Toxic shock syndrome (TSS)' },
+    definition: {
+      en: 'A rare but deadly reaction to poisons made by certain bacteria, linked to tampons and other products worn inside the body; sudden high fever, sunburn-like rash, vomiting, and fainting mean emergency.',
+    },
+  },
+  {
     id: 'transfer-switch',
     name: { en: 'Transfer switch' },
     definition: {
       en: 'A switch an electrician installs next to the breaker panel so a generator can power house circuits safely. It disconnects the house from the power lines first. An interlock kit on the panel does the same job.',
     },
     sketch: 'transfer-switch',
+  },
+  {
+    id: 'trench-foot',
+    name: { en: 'Trench foot' },
+    definition: {
+      en: 'Damage to feet that stay wet and cold for many hours, even well above freezing: swelling, numbness, blotchy skin, and blisters; prevented by drying feet and changing socks.',
+    },
   },
   {
     id: 'trichinellosis',
@@ -927,6 +1189,22 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'How cold it feels on bare skin when wind carries body heat away. A 0°F (-18°C) day with a 15 mph wind feels like -19°F (-28°C).',
     },
+  },
+  {
+    id: 'wound-irrigation',
+    name: { en: 'Wound irrigation' },
+    definition: {
+      en: 'Rinsing a wound with a strong stream of clean drinking water, from a large syringe or a squeezed bag with a pinhole, to wash out dirt and germs. It is the most important step in cleaning a wound.',
+    },
+    sketch: 'wound-irrigation',
+  },
+  {
+    id: 'wound-packing',
+    name: { en: 'Wound packing' },
+    definition: {
+      en: 'Stuffing gauze or clean cloth tightly down into a deep bleeding wound, right onto the bleeding spot, then pressing hard on top, to stop bleeding where a tourniquet cannot go.',
+    },
+    sketch: 'wound-packing',
   },
 ];
 
