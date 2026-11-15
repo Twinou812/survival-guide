@@ -213,7 +213,7 @@ const en = {
   },
 
   // About
-  aboutBy: 'Made by On The House Software. Free for everyone.',
+  aboutBy: 'Made by On The House Software with Claude by Anthropic. Free for everyone.',
 };
 
 export type Strings = typeof en;
