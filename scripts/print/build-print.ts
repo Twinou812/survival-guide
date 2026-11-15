@@ -166,7 +166,7 @@ const disclaimerHtml = () =>
 const coverHtml = (date: string) =>
   `<section class="cover"><div class="cover-light">${readFileSync('scripts/print/porchlight-mark.svg', 'utf8')}</div><h1>Porchlight</h1><p class="tagline">${esc(
     String(strings.appTagline),
-  )}</p><p class="line">${esc(T.coverLine)}</p><p class="edition">${T.coverEdition} · ${date}</p><p class="site">${SITE}</p><p class="maker">On The House Software</p></section>`;
+  )}</p><p class="line">${esc(T.coverLine)}</p><p class="edition">${T.coverEdition} · ${date}</p><p class="site">${SITE}</p><p class="maker">On The House Software with Claude by Anthropic</p></section>`;
 
 /** Contents page; page numbers are filled in by render-pdf.mjs (placeholders __P_id__). */
 const tocHtml = () =>
