@@ -151,6 +151,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'skillet-flatbread',
   },
   {
+    id: 'castle-doctrine',
+    name: { en: 'Castle doctrine' },
+    definition: {
+      en: 'A rule in many U.S. states that you do not have to retreat before defending yourself inside your own home. It does not allow deadly force just to protect property, and the details differ by state.',
+    },
+  },
+  {
     id: 'cathole',
     name: { en: 'Cathole' },
     definition: {
@@ -279,6 +286,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'cyclic-sighing',
   },
   {
+    id: 'deadbolt',
+    name: { en: 'Deadbolt' },
+    definition: {
+      en: 'A door lock with a solid metal bolt that slides into the door frame and cannot be pushed back without the key or the inside thumb-turn. Look for a bolt that goes at least 1 inch into the frame.',
+    },
+  },
+  {
     id: 'dental-elevator',
     name: { en: 'Dental elevator' },
     definition: {
@@ -306,6 +320,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Distillation' },
     definition: {
       en: 'Boiling water and catching the steam as it turns back into liquid. It leaves salt, metals, and most chemicals behind.',
+    },
+  },
+  {
+    id: 'door-viewer',
+    name: { en: 'Door viewer (peephole)' },
+    definition: {
+      en: 'A small wide-angle lens set through a door so you can see who is outside without opening it.',
     },
   },
   {
@@ -368,6 +389,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'Tweezers with narrow, pointed tips that can grab a tick right at the skin without squeezing its body.',
     },
     sketch: 'tick-removal',
+  },
+  {
+    id: 'fire-extinguisher',
+    name: { en: 'Fire extinguisher (A-B-C)' },
+    definition: {
+      en: 'A hand-held metal tank that sprays powder to put out a small fire; the A-B-C label means it works on most home fires, including wood, paper, grease spills, and electrical fires.',
+    },
   },
   {
     id: 'fifo',
@@ -468,6 +496,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'gas-can-ground',
   },
   {
+    id: 'gas-shutoff-wrench',
+    name: { en: 'Gas shut-off wrench' },
+    definition: {
+      en: 'A flat steel wrench with a slot that fits the valve beside a gas meter, so you can give it a quarter turn to stop the gas when you smell a leak.',
+    },
+  },
+  {
     id: 'germination-test',
     name: { en: 'Germination test' },
     definition: {
@@ -509,6 +544,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Grounding' },
     definition: {
       en: 'Pulling attention back to the present through the senses, for example by naming 5 things you see, 4 you feel, 3 you hear, 2 you smell, and 1 you taste. Used during panic or upsetting memories.',
+    },
+  },
+  {
+    id: 'gun-cable-lock',
+    name: { en: 'Gun cable lock' },
+    definition: {
+      en: 'A steel cable with a padlock that threads through an unloaded gun so it cannot be loaded or fired. Often free from police departments. It keeps children out but does not stop theft.',
     },
   },
   {
@@ -765,6 +807,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'n95-respirator',
   },
   {
+    id: 'neighborhood-watch',
+    name: { en: 'Neighborhood watch' },
+    definition: {
+      en: 'A group of neighbors who agree to look out for each other\'s homes and report anything suspicious to the police. Members watch and report; they do not chase or confront anyone.',
+    },
+  },
+  {
     id: 'number-10-can',
     name: { en: 'Number 10 can (#10 can)' },
     definition: {
@@ -814,6 +863,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Pathogen' },
     definition: {
       en: 'A germ that causes disease: a bacterium, virus, parasite, or worm egg.',
+    },
+  },
+  {
+    id: 'pepper-spray',
+    name: { en: 'Pepper spray' },
+    definition: {
+      en: 'A small spray can of hot pepper extract that burns the eyes and skin and makes it hard to see for a while. Legal for adults in every U.S. state with some limits; banned in some countries, including the UK and Canada.',
     },
   },
   {
@@ -1014,6 +1070,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'row-cover',
   },
   {
+    id: 'safe-room',
+    name: { en: 'Safe room (break-in)' },
+    definition: {
+      en: 'A room with a solid, lockable door where the family gathers and calls for help if someone breaks in and you cannot get out. Usually a bedroom stocked with a phone, a light, and a whistle.',
+    },
+    sketch: 'safe-room',
+  },
+  {
     id: 'same-code',
     name: { en: "SAME code" },
     definition: {
@@ -1034,6 +1098,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'Firewood that has been split and dried for 6 to 12 months or more, until it is below 20 percent moisture, so it burns hot with little smoke.',
     },
     sketch: 'firewood-stack',
+  },
+  {
+    id: 'security-bars',
+    name: { en: 'Security bars (quick-release)' },
+    definition: {
+      en: 'Metal bars over windows or doors. They must have a quick-release latch that anyone in the home can open from inside without a key or tool, or they can trap people in a fire.',
+    },
+    sketch: 'window-bar-release',
   },
   {
     id: 'seed-potato',
@@ -1099,6 +1171,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Skin glue (tissue adhesive)' },
     definition: {
       en: 'A medical glue painted over the top of a small, clean, closed cut to hold the edges together while it heals. It is never put inside the wound.',
+    },
+  },
+  {
+    id: 'smoke-alarm',
+    name: { en: 'Smoke alarm' },
+    definition: {
+      en: 'A small round device on the ceiling or high on a wall that beeps loudly when it senses smoke, waking people in time to get out of a fire.',
     },
   },
   {
@@ -1187,6 +1266,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'straw-bale',
   },
   {
+    id: 'strike-plate',
+    name: { en: 'Strike plate' },
+    definition: {
+      en: 'The metal plate on the door frame where the lock bolt goes in. Fastened with 3-inch screws into the wall stud, it makes a door much harder to kick in.',
+    },
+    sketch: 'strike-plate-screws',
+  },
+  {
     id: 'suture',
     name: { en: 'Suture (stitches)' },
     definition: {
@@ -1246,6 +1333,13 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A switch an electrician installs next to the breaker panel so a generator can power house circuits safely. It disconnects the house from the power lines first. An interlock kit on the panel does the same job.',
     },
     sketch: 'transfer-switch',
+  },
+  {
+    id: 'trauma-shears',
+    name: { en: 'Trauma shears' },
+    definition: {
+      en: 'Strong, blunt-tipped scissors bent at an angle, used to cut away clothing from an injury quickly without cutting the skin underneath.',
+    },
   },
   {
     id: 'trench-foot',
