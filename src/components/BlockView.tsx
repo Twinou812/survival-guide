@@ -2,6 +2,7 @@ import { pick, type Block } from '../content/types';
 import { useSettings } from '../settings';
 import { Sketch } from '../sketches';
 import { RichText } from './RichText';
+import { CalcBlock } from '../calc';
 
 export function BlockView({ block }: { block: Block }) {
   const { locale } = useSettings();
@@ -57,6 +58,8 @@ export function BlockView({ block }: { block: Block }) {
           </table>
         </div>
       );
+    case 'calc':
+      return <CalcBlock id={block.calc} />;
     case 'source':
       // Sources are shown as text, not live links: the app is offline, and the URL
       // is there so a reader can check it later from any connected device.

@@ -5,12 +5,16 @@
 //   - a [[glossary-link]] or {{section-link}} to an id that doesn't exist
 //   - a sketch id with no .svg file, or an .svg that breaks the drawing rules
 //   - a table row with the wrong number of cells
+//   - a calculator block naming a calculator that doesn't exist
 //   - a written section with no sources
 //   - empty English text
+//   - calculator math that no longer gives the guide's own worked answers
 
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import type { Block, GlossaryTerm, Localized, Section } from '../src/content/types';
+import { checkCalcMath } from '../src/calc/math-check';
+import { CALC_IDS } from '../src/calc/ids';
 
 export interface CheckResult {
   errors: string[];
@@ -94,6 +98,9 @@ export function checkContent(
   for (const id of termIds) if (!usedTerms.has(id)) warnings.push(`glossary "${id}": not linked from any section yet`);
   for (const id of sketchIds) if (!usedSketches.has(id)) warnings.push(`sketch "${id}": not used anywhere yet`);
 
+  // ---- calculator math (known answers from the guide) ----
+  for (const m of checkCalcMath()) errors.push(`calculators math: ${m}`);
+
   return { errors, warnings };
 
   // ---------------------------------------------------------------------------
@@ -129,6 +136,9 @@ export function checkContent(
           }
           row.forEach((c, j) => checkText(c, `${where} row ${r + 1} cell ${j + 1}`));
         });
+        break;
+      case 'calc':
+        if (!(CALC_IDS as readonly string[]).includes(b.calc)) errors.push(`${where}: unknown calculator "${b.calc}"`);
         break;
       case 'source':
         if (!b.title.trim() || !b.publisher.trim()) errors.push(`${where}: needs a title and publisher`);

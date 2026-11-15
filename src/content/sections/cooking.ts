@@ -594,7 +594,7 @@ export const cooking: Section = {
     {
       type: "p",
       text: {
-        en: "Tools for this section are listed in {{tools-kits|Tools and Kits}}. The {{calculators|Calculators}} will help you scale recipes and fuel to your family size.",
+        en: "Tools for this section are listed in {{tools-kits|Tools and Kits}}. The {{calculators|Calculators}} work out how much cooking fuel your family needs.",
       },
     },
 

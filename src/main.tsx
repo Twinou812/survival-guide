@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
 import { App } from './App';
+import { FamilyProvider } from './calc/family';
 import { SettingsProvider } from './settings';
 import './styles.css';
 
@@ -24,7 +25,9 @@ if (Capacitor.isNativePlatform()) {
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <SettingsProvider>
-      <App />
+      <FamilyProvider>
+        <App />
+      </FamilyProvider>
     </SettingsProvider>
   </StrictMode>,
 );

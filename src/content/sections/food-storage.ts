@@ -55,9 +55,10 @@ export const foodStorage: Section = {
     {
       type: 'p',
       text: {
-        en: 'Most adults need about 1,600 to 3,000 calories a day. Women and older people are at the low end; men, teenagers, and anyone doing hard physical work are at the high end. Pregnant and nursing mothers need more. In a crisis, people work harder than usual (hauling water, gardening, cutting wood), so plan toward the higher number. The {{calculators}} section works out totals for your family, including babies, older people, and pets.',
+        en: 'Most adults need about 1,600 to 3,000 calories a day. Women and older people are at the low end; men, teenagers, and anyone doing hard physical work are at the high end. Pregnant and nursing mothers need more. In a crisis, people work harder than usual (hauling water, gardening, cutting wood), so plan toward the higher number. The calculator below works out totals for your family, including babies and older people; the {{calculators}} section has more.',
       },
     },
+    { type: 'calc', calc: 'food' },
     {
       type: 'table',
       caption: {

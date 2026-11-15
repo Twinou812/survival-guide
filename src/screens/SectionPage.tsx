@@ -1,4 +1,5 @@
 import { BlockView } from '../components/BlockView';
+import { SectionIdContext } from '../calc/ui';
 import { plainText } from '../components/RichText';
 import { TopBar } from '../components/TopBar';
 import { getSection } from '../content/sections';
@@ -55,7 +56,9 @@ export function SectionPage({ id }: { id: string }) {
           </nav>
         )}
 
-        {body.map((b, i) => <BlockView key={i} block={b} />)}
+        <SectionIdContext.Provider value={section.id}>
+          {body.map((b, i) => <BlockView key={i} block={b} />)}
+        </SectionIdContext.Provider>
 
         {sources.length > 0 && (
           <section className="sources" aria-labelledby="sources-title">

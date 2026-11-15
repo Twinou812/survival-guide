@@ -1,6 +1,8 @@
 // The single content source. The Android app, the website, and (in Phase 4) the
 // printable PDF are all built from these files.
 
+import type { CalcId } from '../calc/ids';
+
 /** Text keyed by language code. English ("en") is required; others are added in Phase 5. */
 export type Localized = { en: string } & Partial<Record<string, string>>;
 
@@ -20,6 +22,8 @@ export type Block =
   | { type: 'sketch'; sketch: string; caption: Localized }
   /** Small table. Every row has the same number of cells as `head`. */
   | { type: 'table'; caption: Localized; head: Localized[]; rows: Localized[][] }
+  /** A calculator (src/calc). In the printed guide, the tables next to it stand in for it. */
+  | { type: 'calc'; calc: CalcId }
   | { type: 'source'; title: string; publisher: string; url?: string };
 
 export interface Section {

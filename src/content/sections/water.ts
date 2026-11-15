@@ -34,10 +34,11 @@ export const water: Section = {
         { en: "Store at least two weeks' worth at home if you can. For a family of four, that is 56 gallons (about 212 liters)." },
       ],
     },
+    { type: "calc", calc: "water" },
     {
       type: "p",
       text: {
-        en: "Storing 90 days or more for a whole family takes hundreds of gallons, which most homes cannot hold. So the plan for the long run has three parts: water you store, water you can find, and ways to make found water safe. This section covers all three. The {{calculators}} section works out the numbers for your family.",
+        en: "Storing 90 days or more for a whole family takes hundreds of gallons, which most homes cannot hold. So the plan for the long run has three parts: water you store, water you can find, and ways to make found water safe. This section covers all three. The calculator above works out what to store for your family; the {{calculators}} section has more.",
       },
     },
     {
