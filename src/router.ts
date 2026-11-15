@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 
 export type Route =
   | { name: 'home' }
-  | { name: 'section'; id: string }
+  | { name: 'section'; id: string; at?: string }
   | { name: 'glossary'; termId?: string }
   | { name: 'settings' };
 
@@ -13,7 +13,7 @@ export function parse(hash: string): Route {
   const parts = hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(decodeURIComponent);
   switch (parts[0]) {
     case 'section':
-      return parts[1] ? { name: 'section', id: parts[1] } : { name: 'home' };
+      return parts[1] ? { name: 'section', id: parts[1], at: parts[2] } : { name: 'home' };
     case 'glossary':
       return { name: 'glossary', termId: parts[1] };
     case 'settings':
@@ -28,7 +28,7 @@ export function href(route: Route): string {
     case 'home':
       return '#/';
     case 'section':
-      return `#/section/${encodeURIComponent(route.id)}`;
+      return `#/section/${encodeURIComponent(route.id)}` + (route.at ? `/${encodeURIComponent(route.at)}` : '');
     case 'glossary':
       return route.termId ? `#/glossary/${encodeURIComponent(route.termId)}` : '#/glossary';
     case 'settings':

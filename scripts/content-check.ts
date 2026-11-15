@@ -95,6 +95,16 @@ export function checkContent(
     }
   }
 
+  // Hand-set "Read more" targets must exist.
+  for (const t of glossary) {
+    if (!t.home) continue;
+    const s = sections.find((x) => x.id === t.home!.section);
+    if (!s) errors.push(`glossary "${t.id}": home section "${t.home.section}" doesn't exist`);
+    else if (t.home.heading && !s.blocks.some((b) => b.type === 'h' && b.id === t.home!.heading)) {
+      errors.push(`glossary "${t.id}": home heading "${t.home.heading}" isn't a heading in "${s.id}"`);
+    }
+  }
+
   for (const id of termIds) if (!usedTerms.has(id)) warnings.push(`glossary "${id}": not linked from any section yet`);
   for (const id of sketchIds) if (!usedSketches.has(id)) warnings.push(`sketch "${id}": not used anywhere yet`);
 

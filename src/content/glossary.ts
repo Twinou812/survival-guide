@@ -445,6 +445,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   },
   {
     id: 'frostbite',
+    home: { section: 'seasons', heading: 'cold-illness' },
     name: { en: 'Frostbite' },
     definition: {
       en: 'Skin and the tissue under it freezing in the cold. The skin turns white or grayish-yellow, feels hard or waxy, and goes numb.',
@@ -672,6 +673,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   },
   {
     id: 'hypothermia',
+    home: { section: 'seasons', heading: 'cold-illness' },
     name: { en: 'Hypothermia' },
     definition: {
       en: 'A body temperature below 95°F (35°C). Shivering, confusion, fumbling hands, slurred speech, and sleepiness are warning signs.',
@@ -1055,6 +1057,7 @@ export const GLOSSARY: GlossaryTerm[] = [
   },
   {
     id: 'root-cellar',
+    home: { section: 'growing-food', heading: 'root-cellar' },
     name: { en: 'Root cellar' },
     definition: {
       en: 'A cold, dark, damp storage place, usually covered with earth, that keeps root vegetables, cabbage, and apples fresh for months without power.',

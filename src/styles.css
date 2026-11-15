@@ -275,6 +275,18 @@ figcaption { color: var(--ink-soft); font-size: 0.9rem; text-align: center; marg
 .glossary-list .sketch { padding: 6px; border: 0; }
 .glossary-list h2 { font-size: 1.05rem; margin: 0 0 4px; }
 .glossary-list p { margin: 0; color: var(--ink-soft); }
+.glossary-list .read-more { margin-top: 8px; color: inherit; }
+
+/* A spot reached from a glossary "Read more" link: room under the top bar, and a short glow. */
+.prose [id^="b-"] { scroll-margin-top: 72px; }
+.arrived { animation: arrived 2.5s ease-out; border-radius: 6px; }
+@keyframes arrived {
+  from { box-shadow: 0 0 0 4px var(--accent-soft); background: var(--accent-soft); }
+  to { box-shadow: 0 0 0 4px transparent; background: transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .arrived { animation: none; outline: 3px solid var(--accent); outline-offset: 4px; }
+}
 
 /* ---------- Bottom sheet ---------- */
 .sheet {

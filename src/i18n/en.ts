@@ -49,6 +49,7 @@ const en = {
   glossarySearch: 'Search the glossary',
   glossaryNoResults: 'No matching terms.',
   glossaryOpenFull: 'Open in glossary',
+  glossaryReadMore: 'Read more:',
   close: 'Close',
 
   // Settings

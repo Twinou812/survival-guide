@@ -41,6 +41,11 @@ export interface GlossaryTerm {
   definition: Localized;
   /** Key in src/sketches/index.tsx */
   sketch?: string;
+  /**
+   * Optional: where the glossary's "Read more" link goes. `heading` is a heading id in that
+   * section. Leave it out and the app picks the spot (see src/content/term-homes.ts).
+   */
+  home?: { section: string; heading?: string };
 }
 
 export function pick(text: Localized, locale: string): string {

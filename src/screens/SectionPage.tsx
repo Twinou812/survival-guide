@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BlockView } from '../components/BlockView';
 import { SectionIdContext } from '../calc/ui';
 import { plainText } from '../components/RichText';
@@ -16,9 +17,23 @@ function jumpTo(id: string) {
   el.focus({ preventScroll: true }); // screen readers continue from the heading
 }
 
-export function SectionPage({ id }: { id: string }) {
+export function SectionPage({ id, at }: { id: string; at?: string }) {
   const { t, locale } = useSettings();
   const section = getSection(id);
+
+  // Arriving from a glossary "Read more" link: scroll to that spot and mark it briefly.
+  useEffect(() => {
+    if (!at) return;
+    const frame = requestAnimationFrame(() => {
+      const el = document.getElementById(at);
+      if (!el) return;
+      el.scrollIntoView({ block: 'start' });
+      el.classList.remove('arrived');
+      void el.offsetWidth; // restart the highlight if the same spot is opened again
+      el.classList.add('arrived');
+    });
+    return () => cancelAnimationFrame(frame);
+  }, [at]);
 
   if (!section) {
     window.location.hash = '#/';
@@ -57,7 +72,7 @@ export function SectionPage({ id }: { id: string }) {
         )}
 
         <SectionIdContext.Provider value={section.id}>
-          {body.map((b, i) => <BlockView key={i} block={b} />)}
+          {body.map((b, i) => <BlockView key={i} block={b} anchor={b.type === 'h' ? undefined : `b-${i}`} />)}
         </SectionIdContext.Provider>
 
         {sources.length > 0 && (

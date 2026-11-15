@@ -22,7 +22,7 @@ export function App() {
       tab = 'home';
       break;
     case 'section':
-      screen = <SectionPage id={route.id} />;
+      screen = <SectionPage key={route.id} id={route.id} at={route.at} />;
       tab = 'home';
       break;
     case 'glossary':

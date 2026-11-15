@@ -4,41 +4,42 @@ import { Sketch } from '../sketches';
 import { RichText } from './RichText';
 import { CalcBlock } from '../calc';
 
-export function BlockView({ block }: { block: Block }) {
+/** `anchor` becomes the outer element's id, so a glossary "Read more" link can land on this block. */
+export function BlockView({ block, anchor }: { block: Block; anchor?: string }) {
   const { locale } = useSettings();
   const L = (x: Parameters<typeof pick>[0]) => pick(x, locale);
 
   switch (block.type) {
     case 'p':
-      return <p><RichText text={L(block.text)} /></p>;
+      return <p id={anchor}><RichText text={L(block.text)} /></p>;
     case 'h':
       // Anchor ids are prefixed so they can't clash with app ids. Scrolling is done
       // in code (see SectionPage), because the URL hash is used by the router.
       return <h2 id={`h-${block.id}`} tabIndex={-1}><RichText text={L(block.text)} /></h2>;
     case 'steps':
       return (
-        <ol className="steps">
+        <ol id={anchor} className="steps">
           {block.items.map((it, i) => <li key={i}><RichText text={L(it)} /></li>)}
         </ol>
       );
     case 'list':
       return (
-        <ul>
+        <ul id={anchor}>
           {block.items.map((it, i) => <li key={i}><RichText text={L(it)} /></li>)}
         </ul>
       );
     case 'warning':
-      return <aside className="warning" role="note"><RichText text={L(block.text)} /></aside>;
+      return <aside id={anchor} className="warning" role="note"><RichText text={L(block.text)} /></aside>;
     case 'sketch':
       return (
-        <figure>
+        <figure id={anchor}>
           <Sketch id={block.sketch} label={L(block.caption)} />
           <figcaption>{L(block.caption)}</figcaption>
         </figure>
       );
     case 'table':
       return (
-        <div className="table-wrap" role="region" aria-label={L(block.caption)} tabIndex={0}>
+        <div id={anchor} className="table-wrap" role="region" aria-label={L(block.caption)} tabIndex={0}>
           <table>
             <caption>{L(block.caption)}</caption>
             <thead>

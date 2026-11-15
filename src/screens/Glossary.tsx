@@ -1,6 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
 import { TopBar } from '../components/TopBar';
+import { plainText } from '../components/RichText';
 import { GLOSSARY } from '../content/glossary';
+import { getSection } from '../content/sections';
+import { termHome } from '../content/term-homes';
+import { href } from '../router';
 import { pick } from '../content/types';
 import { useSettings } from '../settings';
 import { Sketch } from '../sketches';
@@ -40,11 +44,32 @@ export function Glossary({ termId }: { termId?: string }) {
               <div>
                 <h2>{name}</h2>
                 <p>{def}</p>
+                <ReadMore termId={term.id} />
               </div>
             </li>
           ))}
         </ul>
       </main>
     </>
+  );
+}
+
+/** "Read more: Water › Making water safe" — goes to the spot that explains this term best. */
+function ReadMore({ termId }: { termId: string }) {
+  const { t, locale } = useSettings();
+  const home = termHome(termId);
+  const section = home && getSection(home.section);
+  if (!home || !section) return null;
+  const heading = home.heading
+    ? section.blocks.find((b) => b.type === 'h' && b.id === home.heading)
+    : undefined;
+  const where = [pick(section.title, locale)];
+  if (heading?.type === 'h') where.push(plainText(pick(heading.text, locale), locale));
+  return (
+    <p className="read-more">
+      <a className="xref" href={href({ name: 'section', id: section.id, at: home.anchor })}>
+        {t.glossaryReadMore} {where.join(' › ')}
+      </a>
+    </p>
   );
 }
