@@ -13,10 +13,12 @@ import type { Section } from "../types";
 //   radio services guide); channel 9 only for emergencies and traveler help (47 CFR 95 CB rules).
 //   Channel 19 for highway traffic is custom, not an FCC rule — say so.
 //
-// PART 1 written (intro, why, listening, walkie-talkie services) + ham radio and 97.403 warning.
-// Still to write: LoRa mesh (Meshtastic; 2026 bandwidth/default-settings question,
-// no FCC rule change), satellite messengers, marine channel 16 mention, family radio plan,
-// neighborhood net, frequency table, power for radios, 90-day to 2-year plan, drawings.
+// - Meshtastic: U.S. 902-928 MHz; old default Long Fast 250 kHz; 2.8 starts NEW U.S. nodes on
+//   Long Turbo 500 kHz, upgrades keep their preset (Meshtastic blog Oct 8, 2026). FCC rules
+//   unchanged, no public FCC statement (Hackaday Sept 17, 2026).
+// - PLB: 406 MHz, registration with NOAA required by law and free (NOAA SARSAT).
+// - Marine ch 16 = 156.800 MHz (USCG); handheld marine VHF on land only in narrow cases (FCC).
+// Text and drawings complete Nov 14, 2026.
 
 export const communications: Section = {
   id: "communications",
@@ -105,6 +107,12 @@ export const communications: Section = {
       },
     },
 
+    {
+      type: "sketch",
+      sketch: "hand-crank-radio",
+      caption: { en: "A hand-crank weather radio: turn the crank or set the solar panel in the sun to keep it playing with no batteries." },
+    },
+
     // ==================================================================
     { type: "h", id: "talking-nearby", text: { en: "Talking nearby: walkie-talkies" } },
     {
@@ -149,6 +157,12 @@ export const communications: Section = {
       text: {
         en: "About range: boxes promise \"up to 35 miles,\" but that's from mountain top to mountain top. Between houses, walls, and trees, small handhelds often reach about half a mile to two miles. Height matters more than anything: standing on a hill, upstairs by a window, or outside in the open can double or triple your range. Test yours around your own neighborhood before you need them.",
       },
+    },
+
+    {
+      type: "sketch",
+      sketch: "walkie-talkie-pair",
+      caption: { en: "Walkie-talkies let a parent at home and a teen on a water run stay in touch when phones are down." },
     },
 
     { type: "h", id: "frs", text: { en: "FRS: the no-license family radio" } },
@@ -226,8 +240,152 @@ export const communications: Section = {
     },
 
     // ==================================================================
-    // PART 2 continues here: mesh texting, satellite messengers, marine ch 16, family plan,
-    // neighborhood net, frequency card, power for radios, plan table, drawings.
+    { type: "h", id: "mesh", text: { en: "Texting with no cell service: mesh radios" } },
+    {
+      type: "p",
+      text: {
+        en: "[[lora-mesh-radio|Mesh radios]] are small, cheap boxes (often under $40) that send short text messages by radio. You pair one with your phone by Bluetooth and type in a phone app, with no cell service and no internet. Each mesh radio also passes along messages for the others, so a neighborhood with many of them can reach farther than any one radio. The most common kind is called Meshtastic.",
+      },
+    },
+    {
+      type: "list",
+      items: [
+        { en: "In the United States they use the 902–928 MHz band, which needs no license. Buy radios made for the U.S. (\"915 MHz\" or \"US\"). Some sellers ship radios or antennas for other countries' bands; check the label." },
+        { en: "They send text and locations only, not voice. Messages are short and can take a little while to arrive." },
+        { en: "Height is everything. A radio in a top-floor window or on a pole outside reaches much farther than one in a pocket." },
+        { en: "Each radio still needs power. Most charge by USB, so a power bank or small solar panel keeps them going." },
+      ],
+    },
+    {
+      type: "sketch",
+      sketch: "mesh-messenger",
+      caption: { en: "A mesh radio up high on a windowsill, powered by a power bank, sends texts typed on a phone with no cell service." },
+    },
+    {
+      type: "warning",
+      text: {
+        en: "Radios only talk to each other when their settings match. In 2026 a question came up about whether Meshtastic's old U.S. default setting (called Long Fast, 250 kHz wide) meets an FCC rule that asks for at least 500 kHz. The FCC rules did not change, and the FCC has said nothing public about it. Newer Meshtastic versions start new U.S. radios on a 500 kHz setting (Long Turbo), while radios set up earlier keep their old setting, and the two can't hear each other. Before you buy or set up, agree with your family and neighbors on one setting and one channel name, write them on your frequency card, and set every radio the same.",
+      },
+    },
+
+    // ==================================================================
+    { type: "h", id: "satellite", text: { en: "Satellite messengers and rescue beacons" } },
+    {
+      type: "p",
+      text: {
+        en: "Some newer phones and small satellite messengers can send a text or an SOS through satellites when there is no cell service at all. Most satellite messengers need a paid plan. Find out now whether your phone can do this, and try its practice or demo mode so you know how it works before you need it.",
+      },
+    },
+    {
+      type: "p",
+      text: {
+        en: "A [[personal-locator-beacon|personal locator beacon (PLB)]] is different: it does one thing, call for rescue, on the 406 MHz satellite system run by NOAA and partner countries. It needs no paid plan. U.S. law requires you to register it with NOAA, and registration is free (beaconregistration.noaa.gov or 1-888-212-7283). Rescue crews respond to every alert, so use it only for real life-or-death emergencies. A PLB is most useful if you have to leave on foot ({{bugging-out|Bugging out}}).",
+      },
+    },
+
+    // ==================================================================
+    { type: "h", id: "marine", text: { en: "Marine radio: boats only" } },
+    {
+      type: "p",
+      text: {
+        en: "Marine VHF channel 16 (156.800 MHz) is the international distress and calling channel for boats. The Coast Guard and most ships listen to it. If your family boats, a marine radio belongs on the boat. On land, marine radios are only allowed in narrow cases (such as at docks and beaches, talking to boats), so don't use one as a home or neighborhood radio. You can still listen.",
+      },
+    },
+
+    // ==================================================================
+    { type: "h", id: "family-plan", text: { en: "Your family radio plan" } },
+    {
+      type: "p",
+      text: {
+        en: "Radios help only if everyone knows which channel to use and when to listen. Make the plan now, while phones work, and write it on paper.",
+      },
+    },
+    {
+      type: "steps",
+      items: [
+        { en: "Pick one main walkie-talkie channel and privacy code, and a backup channel in case the main one is busy. Write both on every radio with tape and a marker." },
+        { en: "Set check-in times, for example the first 5 minutes of every hour. Radios can stay off the rest of the time to save batteries." },
+        { en: "Pick one out-of-area contact, a relative or friend who lives far away. It is often easier to reach someone far away than across town. Everyone texts or calls that person to say they are OK." },
+        { en: "Text first. A short text like \"I'm OK. At the library.\" often gets through when calls don't." },
+        { en: "Pick meeting places: one near home and one outside your neighborhood." },
+        { en: "Agree on a family code word for \"this is really me\" and \"come home now\" ({{mind|Mind}} has more on code words)." },
+        { en: "Give each person a wallet card with the channels, check-in times, contacts, and meeting places. Tape a copy near the door and put one in each go-bag." },
+        { en: "Practice: once a month, do a short radio check-in from different rooms, the yard, and down the street." },
+      ],
+    },
+
+    // ==================================================================
+    { type: "h", id: "neighborhood-net", text: { en: "A neighborhood radio net" } },
+    {
+      type: "p",
+      text: {
+        en: "A \"net\" is just a set time and channel when a group checks in. Neighbors with cheap walkie-talkies can run one on their street.",
+      },
+    },
+    {
+      type: "steps",
+      items: [
+        { en: "Agree on a channel, a backup channel, and a time (for example 8 AM and 7 PM)." },
+        { en: "Pick one calm person to run it, and a second in case the first can't." },
+        { en: "The leader calls each house in order. Each house answers in a few words: everyone OK, needs help, or has something to share (water, a generator, medical skills)." },
+        { en: "Keep it short. Save long talks for after the net, on another channel." },
+        { en: "Write down who checked in and who needs help, on paper with the time." },
+        { en: "Houses that don't answer get a visit, in pairs." },
+      ],
+    },
+
+    // ==================================================================
+    { type: "h", id: "frequency-card", text: { en: "Your frequency card" } },
+    {
+      type: "p",
+      text: {
+        en: "Copy this table onto a card, fill in the blanks, and keep it with your radios. When stress is high, nobody remembers channel numbers.",
+      },
+    },
+    {
+      type: "table",
+      caption: { en: "Frequency card. Fill in the blanks for your family and area." },
+      head: [{ en: "Use" }, { en: "Channel or frequency" }, { en: "Notes" }],
+      rows: [
+        [{ en: "Weather radio" }, { en: "Your local station: 162.___ MHz" }, { en: "SAME county code: ______" }],
+        [{ en: "Family walkie-talkies (main)" }, { en: "Channel ___, code ___" }, { en: "Check in at the top of each hour" }],
+        [{ en: "Family walkie-talkies (backup)" }, { en: "Channel ___, code ___" }, { en: "Use if the main one is busy" }],
+        [{ en: "Neighborhood net" }, { en: "Channel ___" }, { en: "Times: ______" }],
+        [{ en: "Mesh radios" }, { en: "Setting (preset): ______, channel name: ______" }, { en: "Same on every family radio" }],
+        [{ en: "CB (car)" }, { en: "Channel 9" }, { en: "Emergencies and traveler help only" }],
+        [{ en: "Ham radio (licensed only)" }, { en: "146.520 and 446.000 MHz; local repeater: ______" }, { en: "Local net time: ______" }],
+        [{ en: "Boats" }, { en: "Marine channel 16 (156.800 MHz)" }, { en: "Distress and calling" }],
+        [{ en: "Out-of-area contact" }, { en: "Phone: ______" }, { en: "Everyone texts this person" }],
+      ],
+    },
+
+    // ==================================================================
+    { type: "h", id: "radio-power", text: { en: "Keeping radios powered" } },
+    {
+      type: "list",
+      items: [
+        { en: "Pick radios that can run on AA batteries, or that come with an AA battery holder, so you aren't stuck when the rechargeable pack dies." },
+        { en: "Use one or two battery sizes for everything in the house." },
+        { en: "Listening uses much less power than talking. Keep radios off between check-ins, and use the low-power setting when the other person is close." },
+        { en: "Charge USB radios from a power bank, a car outdoors, or a small solar panel. {{power-light-sanitation|Power, Light, and Sanitation}} covers batteries and charging safely." },
+      ],
+    },
+
+    // ==================================================================
+    { type: "h", id: "plan", text: { en: "Plan: now to 2 years" } },
+    {
+      type: "table",
+      caption: { en: "A step-by-step communications plan." },
+      head: [{ en: "When" }, { en: "What to do" }],
+      rows: [
+        [{ en: "Now" }, { en: "Buy a weather radio with hand crank or solar and set the SAME code. Write the family plan and frequency card. Choose an out-of-area contact. Teach everyone to text." }],
+        [{ en: "First 72 hours of an emergency" }, { en: "Weather radio on for news. Text, don't call. Family check-ins at set times. Check on neighbors." }],
+        [{ en: "By 90 days" }, { en: "One FRS walkie-talkie per adult, plus a spare, with batteries. Monthly practice check-in. Talk with neighbors about a street net." }],
+        [{ en: "By 6 months" }, { en: "Get a GMRS license for longer range, or try mesh radios with neighbors on agreed settings. CB in the car if you like." }],
+        [{ en: "By 1 year" }, { en: "One adult studies for and passes the ham Technician test. Find and join a local net." }],
+        [{ en: "By 2 years" }, { en: "Run a neighborhood net drill. Teens learn the radios. Keep cards and batteries up to date every 6 months." }],
+      ],
+    },
 
     { type: "source", title: "NOAA Weather Radio All Hazards", publisher: "National Weather Service", url: "https://www.weather.gov/nwr/" },
     { type: "source", title: "NOAA Weather Radio poster (frequencies, SAME, weekly test)", publisher: "National Weather Service", url: "https://www.weather.gov/media/nwr/NWR_poster.pdf" },
@@ -242,5 +400,13 @@ export const communications: Section = {
     { type: "source", title: "47 CFR 97.403, Safety of life and protection of property", publisher: "Electronic Code of Federal Regulations", url: "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97/subpart-E/section-97.403" },
     { type: "source", title: "Getting your Technician license", publisher: "ARRL, the National Association for Amateur Radio", url: "https://www.arrl.org/getting-your-technician-license" },
     { type: "source", title: "ARRL band plan (146.520 and 446.000 MHz national simplex calling)", publisher: "ARRL", url: "https://www.arrl.org/band-plan" },
+    { type: "source", title: "Meshtastic radio settings (U.S. 902–928 MHz, modem presets)", publisher: "Meshtastic", url: "https://meshtastic.org/docs/overview/radio-settings/" },
+    { type: "source", title: "Let's talk about 2.8 (new U.S. default: Long Turbo, 500 kHz)", publisher: "Meshtastic", url: "https://meshtastic.org/blog/lets-talk-about-2-8/" },
+    { type: "source", title: "FCC ISM rules may shatter LoRa mesh communities", publisher: "Hackaday", url: "https://hackaday.com/2026/09/17/fcc-ism-rules-may-shatter-lora-mesh-communities/" },
+    { type: "source", title: "406 MHz emergency distress beacons (PLB registration)", publisher: "NOAA SARSAT", url: "https://www.sarsat.noaa.gov/emergency-406-beacons/" },
+    { type: "source", title: "U.S. VHF channel information (channel 16)", publisher: "U.S. Coast Guard Navigation Center", url: "https://www.navcen.uscg.gov/us-vhf-channel-information" },
+    { type: "source", title: "Ship radio stations: using hand-held marine VHF radios on land", publisher: "Federal Communications Commission", url: "https://fcc.gov/wireless/bureau-divisions/mobility-division/maritime-mobile/ship-radio-stations/ship-radio-1" },
+    { type: "source", title: "About marine handheld VHF", publisher: "Federal Communications Commission", url: "https://www.fcc.gov/node/253705" },
+    { type: "source", title: "Create your family emergency communication plan (FEMA P-1094)", publisher: "Ready.gov / FEMA", url: "https://www.ready.gov/sites/default/files/2020-03/family-emergency-communication-planning-document.pdf" },
   ],
 };

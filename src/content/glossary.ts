@@ -404,6 +404,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: "The common store-bought walkie-talkie. No license needed, fixed antenna, low power. Real range among houses and trees is often half a mile to 2 miles. Privacy codes do not make talk private.",
     },
+    sketch: 'walkie-talkie-pair',
   },
   {
     id: 'fuel-stabilizer',
@@ -514,6 +515,7 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: "A small radio you can power by turning a handle, and often by a small solar panel too. Many also get NOAA weather broadcasts and can charge a phone a little.",
     },
+    sketch: 'hand-crank-radio',
   },
   {
     id: 'hardening-off',
@@ -686,6 +688,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'lora-mesh-radio',
+    name: { en: "Mesh radio (LoRa)" },
+    definition: {
+      en: "A small, cheap radio that pairs with your phone by Bluetooth and sends short texts to other mesh radios with no cell service or internet, passing messages along from radio to radio. Every radio must use the same settings.",
+    },
+    sketch: 'mesh-messenger',
+  },
+  {
     id: 'micron',
     name: { en: 'Micron' },
     definition: {
@@ -787,6 +797,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     name: { en: 'Permethrin' },
     definition: {
       en: 'An insecticide sprayed on clothing, shoes, and gear (never on skin) that kills ticks and mosquitoes that touch it. It lasts through several washings.',
+    },
+  },
+  {
+    id: 'personal-locator-beacon',
+    name: { en: "Personal locator beacon (PLB)" },
+    definition: {
+      en: "A small device that calls for rescue through satellites on 406 MHz and sends your location. No paid plan; registration with NOAA is free and required by law. For life-or-death emergencies only.",
     },
   },
   {
