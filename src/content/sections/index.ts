@@ -2,6 +2,7 @@ import type { Section } from '../types';
 import { startHere } from './start-here';
 import { water } from './water';
 import { foodStorage } from './food-storage';
+import { cooking } from './cooking';
 import { growingFood } from './growing-food';
 import { trapping } from './trapping';
 import { seasons } from './seasons';
@@ -25,7 +26,6 @@ export const SECTIONS: Section[] = [
   trapping,
   seasons,
   powerLightSanitation,
-  communications,
   medical,
   mind,
   homeDefense,
@@ -33,6 +33,8 @@ export const SECTIONS: Section[] = [
   calculators,
   menstrualCare,
   buggingOut,
+  communications,
+  cooking,
 ];
 
 export function getSection(id: string): Section | undefined {

@@ -37,6 +37,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'backfeed-cord',
   },
   {
+    id: 'bannock',
+    name: { en: 'Bannock' },
+    definition: {
+      en: 'A simple quick bread of flour, baking powder, fat, and water, cooked in a pan or wrapped around a stick over a campfire, with no oven needed.',
+    },
+    sketch: 'bannock-stick',
+  },
+  {
     id: 'baseline',
     name: { en: 'Baseline (awareness)' },
     definition: {
@@ -133,6 +141,14 @@ export const GLOSSARY: GlossaryTerm[] = [
       en: 'A small device that beeps loudly when carbon monoxide builds up. Choose one with a battery or battery backup so it works when the power is out.',
     },
     sketch: 'co-alarm',
+  },
+  {
+    id: 'cast-iron-skillet',
+    name: { en: 'Cast-iron skillet' },
+    definition: {
+      en: 'A heavy frying pan made of iron that holds heat evenly, works on a camp stove, grill, or fire, and lasts for generations if kept dry and oiled.',
+    },
+    sketch: 'skillet-flatbread',
   },
   {
     id: 'cathole',
@@ -313,6 +329,14 @@ export const GLOSSARY: GlossaryTerm[] = [
     definition: {
       en: 'Frozen carbon dioxide, far colder than normal ice, sold in blocks to keep freezers and coolers cold. Never touch it with bare hands, and never use it in a closed room or car: the gas it gives off can suffocate.',
     },
+  },
+  {
+    id: 'dutch-oven',
+    name: { en: 'Dutch oven (camp)' },
+    definition: {
+      en: 'A heavy cast-iron pot with three short legs and a flat, rimmed lid that holds hot coals, so it can bake bread or simmer stews outdoors like a small oven.',
+    },
+    sketch: 'dutch-oven-coals',
   },
   {
     id: 'emergency-blanket',
@@ -855,6 +879,13 @@ export const GLOSSARY: GlossaryTerm[] = [
     sketch: 'pressure-canner',
   },
   {
+    id: 'pressure-cooker',
+    name: { en: 'Pressure cooker' },
+    definition: {
+      en: 'A pot with a locking lid that traps steam so food cooks hotter and much faster, cutting the fuel needed for beans and grains. It is not the same as a pressure canner and is not for canning.',
+    },
+  },
+  {
     id: 'progressive-muscle-relaxation',
     name: { en: 'Progressive muscle relaxation' },
     definition: {
@@ -1094,12 +1125,27 @@ export const GLOSSARY: GlossaryTerm[] = [
     },
   },
   {
+    id: 'solar-oven',
+    name: { en: 'Solar oven' },
+    definition: {
+      en: 'An insulated box with a clear lid and shiny reflectors that cooks food in a dark pot using only sunlight, with no fuel and no smoke.',
+    },
+    sketch: 'solar-box-oven',
+  },
+  {
     id: 'solar-still',
     name: { en: 'Solar still' },
     definition: {
       en: 'A hole in the ground covered with clear plastic. Sun heats the ground, water rises as vapor, collects on the plastic, and drips into a container.',
     },
     sketch: 'solar-still',
+  },
+  {
+    id: 'sourdough-starter',
+    name: { en: 'Sourdough starter' },
+    definition: {
+      en: 'A jar of flour and water that has collected wild yeast and bacteria; fed every day, it makes bread rise with no store-bought yeast.',
+    },
   },
   {
     id: 'splint',
