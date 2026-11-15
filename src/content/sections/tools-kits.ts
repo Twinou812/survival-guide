@@ -525,6 +525,7 @@ export const toolsKits: Section = {
         { en: "A paper list of family phone numbers, the out-of-area contact, and meeting places. See {{communications}}." },
         { en: "Cash in small bills, since card readers and ATMs may not work without power." },
         { en: "A spare set of house and car keys." },
+        { en: "Encrypted flash drives with scans of all of the above, one carried by each of at least two adults. {{start-here|Start Here}} shows how to make them." },
       ],
     },
 
